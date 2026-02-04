@@ -1404,7 +1404,7 @@
                         question: "<blank>Historical Cost</blank>（历史成本）：资产按<blank>cost incurred</blank>（购置时成本）计量；负债按<blank>consideration received</blank>（收到的对价）计量。",
                         explanation: {
                             title: "历史成本",
-                            content: "历史成本是最传统、最常用的计量基础。核心思想：资产按当时花了多少钱买的来记录，后续减去折旧（如果有）。优点：客观、可验证、不容易被操纵——你说机器值100万，拿发票出来，大家都服气。缺点：不反映当前市场价值——机器可能等值了，也可能升值了，但账上还是原价减折旧。负债也类似：按当时收到的对价（借的钱）计量。",
+                            content: "历史成本是最传统、最常用的计量基础。核心思想：资产按当时花了多少钱买的来记录，后续减去折旧（如果有）。优点：客观、可验证、不容易被操纵——你说机器值100万，拿发票出来，大家都服气。缺点：不反映当前市场价值——机器可能贬值了，也可能升值了，但账上还是原价减折旧。负债也类似：按当时收到的对价（借的钱）计量。",
                             analogy: "你去年花20万买了一台车，现在同款二手车市场只值15万。按历史成本，你的资产负债表还是记：车 = 20万 - 折旧，不会改成市场价。这样记的好处是：客观，不会有人怕你编数据。坑的是：车实际也许已经不值17万，但报表上看不出来。"
                         }
                     },
@@ -1461,7 +1461,7 @@
                         question: "<blank>Assets</blank>（资产）和<blank>Expenses</blank>（费用）：借方<blank>Increase</blank>（增加），贷方<blank>Decrease</blank>（减少）。",
                         explanation: {
                             title: "资产和费用的借贷方向",
-                            content: "这是最常考的借贷规则！资产和费用都是'借方类账户'，增加时记借方，减少时记贷方。为什么？思考会计等式——资产=负债+权益，资产在等式左边，所以增加时在左边（借方）。费用也类似，因为费用最终会减少权益（利润），而权益在等式右边。减少右边=增加左边=借方。减少右边=增加左边=借方。记忆口诀：资产费用借增贷减。",
+                            content: "这是最常考的借贷规则！资产和费用都是'借方类账户'，增加时记借方，减少时记贷方。为什么？思考会计等式——资产=负债+权益，资产在等式左边，所以增加时在左边（借方）。费用也类似，因为费用最终会减少权益（利润），而权益在等式右边。减少右边=增加左边=借方。记忆口诀：资产费用借增贷减。",
                             analogy: "买设备时（资产增加）：Dr Equipment 10万；付工资时（费用增加）：Dr Wages 5万。都是借方增加。反过来，卖掉旧设备（资产减少）：Cr Equipment。这个规则必须背熟，否则做分录会错！"
                         }
                     },
@@ -1505,7 +1505,7 @@
                     {
                         id: "5-1",
                         category: "原始凭证",
-                        question: "<blank>原始凭证</blank>（Source documents）是所有会计记录的<blank>Foundation</blank>（基础），为业务交易提供<blank>Evidence</blank>（证据）。",
+                        question: "<blank>Source documents</blank>（原始凭证）是所有会计记录的<blank>Foundation</blank>（基础），为业务交易提供<blank>Evidence</blank>（证据）。",
                         explanation: {
                             title: "原始凭证的作用",
                             content: "原始凭证是会计记录的基础！没有发票、收据、订单等原始凭证，会计就没有记账依据。为什么重要？① 证明交易确实发生了；② 审计时需要核实；③ 防止欺诈和错误。",
@@ -1597,7 +1597,7 @@
                         explanation: {
                             title: "采购商品分录",
                             content: "采购商品增加了费用（Purchases借方），同时要么现金减少（Cr Bank），要么形成负债（Cr Trade payables）。",
-                            analogy: "你去批发市场进货，货物（费用）增加了，要么掏钱包（Bank减少），要么赊账（形成应付账款）。"
+                            analogy: "你去批发市场赊账进货5000元。分录：Dr Purchases 5000, Cr Trade payables 5000。如果是现金支付：Dr Purchases 5000, Cr Bank 5000。"
                         }
                     },
                     {
@@ -1607,7 +1607,7 @@
                         explanation: {
                             title: "销售商品分录",
                             content: "销售商品产生收入（Sales贷方），同时要么收到现金（Dr Bank），要么形成债权（Dr Trade receivables）。",
-                            analogy: "你卖东西给客户，收入增加了。客户要么当场付钱（Bank增加），要么先欠着（形成应收账款）。"
+                            analogy: "你赊销商品给客户8000元。分录：Dr Trade receivables 8000, Cr Sales 8000。如果客户当场付现金：Dr Bank 8000, Cr Sales 8000。"
                         }
                     },
                     {
@@ -1617,7 +1617,7 @@
                         explanation: {
                             title: "采购退回分录",
                             content: "Outwards = 向外 = 你把货退回给供应商。退货后你欠供应商的钱减少（Dr Trade payables），采购也要冲减（Cr Purchases returns）。",
-                            analogy: "你从淘宝买的货有问题要退货，退回去（outwards），你欠卖家的钱就少了。"
+                            analogy: "你赊购的货有问题，退回价值1000元的商品给供应商。分录：Dr Trade payables 1000, Cr Purchases returns 1000。你欠的钱少了1000。"
                         }
                     },
                     {
@@ -1627,7 +1627,7 @@
                         explanation: {
                             title: "销售退回分录",
                             content: "Inwards = 向内 = 客户把货退回给你。退货冲减收入（Dr Sales returns），客户欠你的钱也减少（Cr Trade receivables）。",
-                            analogy: "你开网店，客户申请7天无理由退货，货退回来（inwards），你就不能再向客户要那笔钱了。"
+                            analogy: "客户退回价值2000元的商品。分录：Dr Sales returns 2000, Cr Trade receivables 2000。客户欠你的钱减少了2000。"
                         }
                     },
 
@@ -1654,7 +1654,7 @@
                     {
                         id: "6-7",
                         category: "定期盘存制",
-                        question: "&nbsp;&nbsp;• Carriage <blank>inwards</blank>（进货运费）计入<blank>purchase cost</blank>（采购成本）；&nbsp;&nbsp;• Carriage <blank>outwards</blank>（出货运费）作为<blank>selling expense</blank>（销售费用）。",
+                        question: "&nbsp;&nbsp;• Carriage <blank>inwards</blank>（进货运费）计入<blank>purchase cost</blank>（采购成本）；<br>&nbsp;&nbsp;• Carriage <blank>outwards</blank>（出货运费）作为<blank>selling expense</blank>（销售费用）。",
                         explanation: {
                             title: "进货运费 vs 出货运费",
                             content: "Inwards（进来）= 把货运进仓库的运费 → 是存货成本的一部分。Outwards（出去）= 把货送给客户的运费 → 是销售费用。",
@@ -1952,7 +1952,7 @@
                         explanation: {
                             title: "PPE 初始计量公式",
                             content: "【核心公式】PPE成本 = 买价 + 让它能用的一切必要花费！Directly attributable costs = 直接可归属成本，判断标准：如果不花这笔钱，资产就没法用，那就要算进去。【分录】Dr PPE（资产增加）, Cr Bank/Payables（钱出去或欠供应商）。",
-                            analogy: "网购一台大型游戏机：机器本身5000块 + 运费200块 + 师傅上门安装调试300块 + 买转换插头50块 = 总成本5550块，全部记为PPE成本。因为没有这些，游戏机就没法玩！但是你买的游戏光盘不算，那是以后的运营成本。"
+                            analogy: "网购一台大型游戏机：机器本身5000块 + 运费200块 + 师傅上门安装调试300块 + 买转换插头50块 = 总成本5550块。分录：Dr PPE 5550, Cr Bank 5550。如果赊账购买：Dr PPE 5550, Cr Trade payables 5550。"
                         }
                     },
                     {
@@ -2052,7 +2052,7 @@
                         explanation: {
                             title: "折旧的账务处理",
                             content: "【必背分录】Dr Depreciation expense (SPL)，Cr Accumulated depreciation (SOFP)。① Depreciation expense = 当期费用，减少利润；② Accumulated depreciation = 资产的抵减科目，累积记录已折旧总额。【为什么用累计折旧？】为了保留原始成本信息——报表上同时显示成本和累计折旧。",
-                            analogy: "就像你的车有两个标签：一个写着'买价12万'（Cost），另一个写着'已用掉6万'（Accumulated depreciation）。账面价值 = 12-6 = 6万。每年计提折旧就是在'已用掉'的标签上加数字，同时当年利润也减少。"
+                            analogy: "你的设备原价10万，预计用5年，年折旧2万。每年年末分录：Dr Depreciation expense 20000, Cr Accumulated depreciation 20000。报表上同时显示成本10万和累计折旧，让读者知道资产原始价值和已使用程度。"
                         }
                     },
                     {
@@ -2248,7 +2248,7 @@
                         question: "<blank>Purchased goodwill</blank>（外购商誉） = <blank>Purchase price</blank>（购买价格） - <blank>Net assets at fair value</blank>（净资产公允价值），可<blank>capitalised</blank>（资本化）为无形非流动资产。",
                         explanation: {
                             title: "外购商誉的确认",
-                            content: "【外购商誉 = 收购时多付的钱】当你收购一家公司时，如果付的钱超过了它的净资产公允价值，超出的部分就是'商誉'。为什么能资本化？因为有实际的交易价格作为计量依据！外购商誉确认后，每年要做减值测试（Impairment review），但不摆销。",
+                            content: "【外购商誉 = 收购时多付的钱】当你收购一家公司时，如果付的钱超过了它的净资产公允价值，超出的部分就是'商誉'。为什么能资本化？因为有实际的交易价格作为计量依据！外购商誉确认后，每年要做减值测试（Impairment review），但不摊销。",
                             analogy: "花150万买了一家净资产只值100万的公司，多付的50万买的是什么？可能是这家公司的品牌、客源、技术团队等——这些无形的价值就是'外购商誉'，记为资产，50万。"
                         }
                     },
@@ -2326,7 +2326,7 @@
                         explanation: {
                             title: "应计费用的本质与处理",
                             content: "【一句话理解】应计费用 = 先消费、后付款。你已经'白嫖'了别人的服务，但钱还没给。既然欠人钱，当然是负债！【为什么要记账？】因为根据权责发生制，费用在'享受服务时'确认，而不是'付钱时'确认。",
-                            analogy: "想象你是一家小店：12月用了一个月电，电力公司1月才来收钱。2月做账时，12月的电费算谁的？当然是12月的！所以12月31日做账：Dr电费（这个月的费用），Cr应计费用（欠电力公司的钱）。"
+                            analogy: "12月用了电费5000元，电力公司1月才来收钱。12月31日做账：Dr 电费 5000, Cr 应计费用 5000。费用增加5000（减少利润），同时形成5000元的负债。1月付款时：Dr 应计费用 5000, Cr Bank 5000。"
                         }
                     },
                     {
@@ -2336,7 +2336,7 @@
                         explanation: {
                             title: "应计收入的本质与处理",
                             content: "【一句话理解】应计收入 = 先服务、后收款。你已经干了活，但钱还没收到。既然别人欠你钱，当然是你的资产！【为什么要记账？】因为根据权责发生制，收入在'提供服务时'确认，而不是'收钱时'确认。",
-                            analogy: "你是设计师，12月给客户做完了logo，客户1月才付款。2月做账时，12月的设计费算谁的？当然是12月的！所以12月31日做账：Dr应计收入（客户欠我钱），Cr设计收入（这个月赚的）。"
+                            analogy: "你是设计师，12月给客户完成了logo设计，收费8000元，客户1月才付款。12月31日做账：Dr 应计收入 8000, Cr 设计收入 8000。收入增加8000（利润增加），同时形成8000元的资产。1月收款时：Dr Bank 8000, Cr 应计收入 8000。"
                         }
                     },
                     {
@@ -2346,7 +2346,7 @@
                         explanation: {
                             title: "预付费用的本质与处理",
                             content: "【一句话理解】预付费用 = 先付款、后消费。钱先付了，但服务还没享受。既然付了钱将来能享受服务，当然是你的资产！【为什么要调整？】期末要把'还没用掉'的部分从费用里拿出来，变成资产。",
-                            analogy: "你租房子，1月一次性交了全年房租12万。1月底时，你只住了1个月，还有11个月没住呢！这11万就是'预付'——你提前付的钱，将来才能享受。做账：Dr预付房租11万（资产），Cr房租费用11万（费用减少）。"
+                            analogy: "你1月一次性交了全年房租12万。1月底时只住了1个月，还有11万是明年的。调整分录：Dr 预付房租 110000, Cr 房租费用 110000。这样1月费用只有1万，11万作为资产留到以后月份慢慢转费用。"
                         }
                     },
                     {
@@ -2356,7 +2356,7 @@
                         explanation: {
                             title: "预收收入的本质与处理",
                             content: "【一句话理解】预收收入 = 先收款、后服务。钱先收了，但活还没干。既然收了钱将来必须服务，当然是你的负债！【为什么要调整？】期末要把'还没做'的部分从收入里拿出来，变成负债。",
-                            analogy: "你开健身房，会员1月一次性交了全年费用12万。1月底时，你只服务了1个月，还有11个月没服务呢！这11万就是'预收'——你收了钱，但还欠人家11个月的服务。做账：Dr会费收入11万（收入减少），Cr预收收入11万（负债）。"
+                            analogy: "你开健身房，会员1月一次性交了全年费用12万。1月底时只服务了1个月，还有11万是以后的。调整分录：Dr 会费收入 110000, Cr 预收收入 110000。这样1月收入只有1万，11万作为负债留到以后月份慢慢转收入。"
                         }
                     },
                     {
@@ -2433,7 +2433,7 @@
                         explanation: {
                             title: "坏账的定义与核销",
                             content: "坏账是确定收不回来的钱，比如客户破产、跑路、法院判决无法执行等。核销时：① 减少应收账款（不再期望收回）；② 确认费用（损失）。注意：坏账是'确定'的损失，不是'可能'的损失。",
-                            analogy: "客户Tom破产了，法院通知你一分钱都拿不回来。这笔钱就是板上钉钉的坏账，要从账上划掉，同时确认损失。"
+                            analogy: "客户Tom破产，欠你的3000元确定收不回来了。核销分录：Dr Irrecoverable debts expense 3000, Cr Trade receivables 3000。费用增加3000，应收账款减少3000。"
                         }
                     },
                     {
@@ -2443,7 +2443,7 @@
                         explanation: {
                             title: "坏账收回的处理",
                             content: "之前核销的坏账后来又收回来了（比如客户突然还钱了），这是意外之喜！处理方式：收到现金（Dr Bank），同时冲减坏账费用（Cr Irrecoverable debts expense）。本质上是把之前确认的损失冲回来。",
-                            analogy: "你以为Tom彻底倒闭了，结果他东山再起把欠款还了。这笔钱等于'失而复得'，要把之前记的损失冲掉。"
+                            analogy: "之前核销的Tom坏账3000元，结果他东山再起把钱还了。收回分录：Dr Bank 3000, Cr Irrecoverable debts expense 3000。现金增加，之前确认的损失冲回。"
                         }
                     },
                     {
@@ -2473,7 +2473,7 @@
                         explanation: {
                             title: "备抵的账务处理",
                             content: "计提备抵：增加费用（减少利润），增加备抵账户（减少净应收账款）。备抵是应收账款的'对冲科目'，在SOFP上列示为应收账款的减项。所以存在备抵会减少流动资产总额、减少净资产。",
-                            analogy: "你有100万应收账款，提了5万备抵。报表上显示：应收账款净额 = 100 - 5 = 95万。这5万是'预计损失'，虽然还没发生，但已经扣掉了。"
+                            analogy: "你有100万应收账款，预计5%可能收不回，首次计提5万备抵。分录：Dr Irrecoverable debts expense 50000, Cr Allowance for receivables 50000。报表上应收账款净额 = 100万 - 5万 = 95万。"
                         }
                     },
                     {
@@ -2493,7 +2493,7 @@
                         explanation: {
                             title: "坏账费用计算公式",
                             content: "进入损益表的坏账费用由三部分组成：① 备抵变动（期末-期初，可正可负）；② 本期核销的坏账（确定的损失）；③ 减去本期收回的坏账（之前的损失冲回）。这个公式是FA考试的重点计算题！",
-                            analogy: "本期坏账费用 = 预估损失变化 + 确定损失 - 意外收回。就像你的'坏账账单'，该加的加、该减的减，最后算出对利润的影响。"
+                            analogy: "【小计算】期初备抵5万，期末备抵8万（变动+3万），本期核销坏账2万，收回之前坏账0.5万。坏账费用 = (8-5) + 2 - 0.5 = 4.5万。这4.5万进入利润表减少当期利润。"
                         }
                     },
                     {
@@ -2570,7 +2570,7 @@
                         explanation: {
                             title: "预计负债的账务处理",
                             content: "确认时：借费用（减少利润）、贷预计负债（增加负债）。实际支付时：借预计负债（减少负债）、贷现金（减少资产）。如果实际支付与预计不符，差额调整当期损益。",
-                            analogy: "预估明年要付3万保修费→先记3万费用和负债。明年实际用了2.8万→支付2.8万，剩0.2万冲减费用。"
+                            analogy: "预估明年要付3万保修费。确认时：Dr Warranty expense 30000, Cr Provision 30000。明年实际花了2.8万：Dr Provision 28000, Cr Bank 28000。剩余2000元：Dr Provision 2000, Cr Expense 2000，冲减费用。"
                         }
                     },
                     {
@@ -2723,7 +2723,7 @@
                         explanation: {
                             title: "股利的会计处理",
                             content: "【三个阶段】① 提议阶段：不记账，只在附注披露。② 宣告阶段：正式形成义务，做账Dr Retained earnings, Cr Dividends payable。③ 支付阶段：做账Dr Dividends payable, Cr Bank。",
-                            analogy: "就像发奖金：光是说'可能发'不用记账；正式通知'发5万'就要记一笔应付；实际发钱时消除负债。"
+                            analogy: "宣告股利5万元：Dr Retained earnings 50000, Cr Dividends payable 50000。支付时：Dr Dividends payable 50000, Cr Bank 50000。提议阶段不做账，只在附注披露。"
                         }
                     },
                     {
@@ -2908,7 +2908,7 @@
                         explanation: {
                             title: "应收账款增加的三种情况",
                             content: "① Credit sales（赊销）：客户赊账购买商品，欠款增加。Dr Trade Receivables, Cr Sales。② Interest charged on overdue accounts（逾期利息）：向客户收取超期未付款的利息。Dr Trade Receivables, Cr Interest Income。③ Dishonoured cheques（空头支票/拒付支票）：客户给的支票被银行拒付，钱没收到但Cash已记减少，需要恢复应收。Dr Trade Receivables, Cr Cash/Bank。这是考试重点陷阱！",
-                            analogy: "① 赊销=客户说'先记账，以后给钱'；② 利息=逾期不付要加利息；③ 空头支票=支票跳票了，钱又欠回去。"
+                            analogy: "① 赊销1万：Dr Trade Receivables 10000, Cr Sales 10000。② 收客户近期利息200：Dr Trade Receivables 200, Cr Interest Income 200。③ 客户支票跳票500：Dr Trade Receivables 500, Cr Bank 500（之前记的收款要冲回）。"
                         }
                     },
                     {
@@ -2918,7 +2918,7 @@
                         explanation: {
                             title: "应收账款减少的五种情况",
                             content: "① Cash received（收款）：客户还钱了。② Sales returns（销售退回）：客户退货。③ Bad debts written off（坏账核销）：确认收不回来了，直接注销（影响利润表）。④ Discount allowed（给予折扣）：客户提前付款享受折扣，少收钱（影响利润表）。⑤ Contra entry（对冲）：同一公司既是客户又是供应商，互相抵消。注意：③④会影响利润，①②⑤不影响。",
-                            analogy: "① 收款=终于把钱要回来了；② 退货=货退账减；③ 坏账=认栽；④ 折扣=打折少收；⑤ 对冲=互相抵消。"
+                            analogy: "① 收款1万：Dr Bank 10000, Cr Trade Receivables 10000。② 退货500：Dr Sales Returns 500, Cr Trade Receivables 500。③ 坏账核销3000：Dr Irrecoverable Debts Expense 3000, Cr Trade Receivables 3000。④ 折扣200：Dr Discount Allowed 200, Cr Trade Receivables 200。"
                         }
                     },
                     // ===== 4. 应付账款分录 =====
@@ -2929,7 +2929,7 @@
                         explanation: {
                             title: "应付账款增加的情况",
                             content: "① Credit purchases（赊购）：向供应商赊账购买。Dr Purchases, Cr Trade Payables。② Interest charged by supplier（供应商收取利息）：逾期付款被罚息。Dr Interest Expense, Cr Trade Payables。③ Cash refund from supplier（收到退款）：供应商退回之前多付的款项。Dr Cash, Cr Trade Payables。注意：收到退款增加负债（因为之前多付时已经减少了负债，现在需要恢复）。",
-                            analogy: "① 赊购=先拿货后付钱，欠更多；② 利息=超期被罚，欠更多；③ 退款=之前多付了，现在恢复欠款额度。"
+                            analogy: "① 赊购1万：Dr Purchases 10000, Cr Trade Payables 10000。② 供应商收利息200：Dr Interest Expense 200, Cr Trade Payables 200。③ 收到供应商退款500（之前多付）：Dr Bank 500, Cr Trade Payables 500。"
                         }
                     },
                     {
@@ -2939,7 +2939,7 @@
                         explanation: {
                             title: "应付账款减少的情况",
                             content: "① Cash paid to supplier（付款）：还钱给供应商。Dr Trade Payables, Cr Cash/Bank。② Purchase returns / Return outwards（采购退回）：退货给供应商，减少欠款。Dr Trade Payables, Cr Purchase Returns。③ Discount received（收到供应商折扣）：提前付款享受折扣，少付钱。Dr Trade Payables, Cr Discount Received（收入）。注意：Discount received是收入，会增加利润！与Discount allowed相反。",
-                            analogy: "① 付款=终于把钱还了；② 退货=货退了，欠款也少了；③ 收折扣=提前还钱有优惠，赚了！"
+                            analogy: "① 付款1万：Dr Trade Payables 10000, Cr Bank 10000。② 退货500：Dr Trade Payables 500, Cr Purchase Returns 500。③ 收到折扣200：Dr Trade Payables 200, Cr Discount Received 200（赚了200元）。"
                         }
                     },
                     // ===== 5. 对冲处理 =====
@@ -2982,7 +2982,7 @@
                         explanation: {
                             title: "通过应收账款控制账户倒推赊销",
                             content: "当题目要求计算Credit Sales时，使用T账户平衡原理：借方合计 = 贷方合计。借方 = Opening balance + Credit Sales。贷方 = Cash received + Bad debts + Discount allowed + Returns + Contra + Closing balance。所以：Credit Sales = 贷方合计 - Opening balance。或者：Credit Sales = Closing + Cash + Baddebt + Discount + Returns + Contra - Opening。注意：现金销售(Cash sales)不经过应收账款！Total Revenue = Credit Sales + Cash Sales。",
-                            analogy: "就像算'今天卖了多少货'：今天结束时库存 + 今天卖掉的 = 今天开始时库存 + 今天进货的。移项就能算出卖了多少。"
+                            analogy: "【小计算】期初应收40万，期末应收60万，本期收款180万，坏账核销5万，销售退回8万，折扣3万，对冲4万。Credit Sales = 60 + 180 + 5 + 8 + 3 + 4 - 40 = 220万。"
                         }
                     },
                     {
@@ -2992,7 +2992,7 @@
                         explanation: {
                             title: "通过应付账款控制账户倒推赊购",
                             content: "当题目要求计算Credit Purchases时，使用T账户平衡原理：贷方合计 = 借方合计。贷方 = Opening balance + Credit Purchases。借方 = Cash paid + Returns + Discount received + Contra + Closing balance。所以：Credit Purchases = 借方合计 - Opening balance。或者：Credit Purchases = Closing + Cash paid + Returns + Discount + Contra - Opening。注意：现金采购(Cash purchases)不经过应付账款！",
-                            analogy: "和应收账款类似：今天结束欠多少 + 今天还了多少 = 今天开始欠多少 + 今天又赊了多少。移项就能算出赊购。"
+                            analogy: "【小计算】期初应付25万，期末应付35万，本期付款120万，采购退回6万，获得折扣2万，对冲4万。Credit Purchases = 35 + 120 + 6 + 2 + 4 - 25 = 142万。"
                         }
                     },
                     {
@@ -3156,7 +3156,7 @@
                         explanation: {
                             title: "应计费用的会计处理",
                             content: "应计费用(Accrued expenses)是典型的'先消费后付款'场景。例如：12月份的电费，但电费账单1月才收到，付款要2月。年末调整时：Dr Expense（费用增加，影响利润表），Cr Accrued expenses（流动负债增加，在SOFP中列示）。常见例子：应计工资、应计利息、应计水电费等。下期实际付款时：Dr Accrued expenses, Cr Bank。",
-                            analogy: "12月吃了火锅但赊账，年底要记这笔'吃饭费'和'欠款'。虽然钱没付，但饭已经吃了，费用要算今年的。分录就是：借 餐饮费，贷 应付火锅店。"
+                            analogy: "12月电费8000元还没付。年末分录：Dr Electricity expense 8000, Cr Accrued expenses 8000。下期付款时：Dr Accrued expenses 8000, Cr Bank 8000。"
                         }
                     },
                     {
@@ -3166,7 +3166,7 @@
                         explanation: {
                             title: "预付费用的会计处理",
                             content: "预付费用(Prepaid expenses)是典型的'先付款后消费'场景。例如：12月预付了下一年1-6月的房租。年末调整时：Dr Prepaid expenses（流动资产增加，在SOFP中列示），Cr Expense（费用减少，因为这部分不属于本期）。常见例子：预付租金、预付保险费。下期消耗时：Dr Expense, Cr Prepaid expenses。",
-                            analogy: "12月交了明年上半年的房租，年底要把这笔'提前交的钱'从今年费用里拿出来，变成'资产'。分录就是：借 预付房租（资产），贷 租金费用（减少）。"
+                            analogy: "12月预付明年上半年房租60000元。年末分录：Dr Prepaid rent 60000, Cr Rent expense 60000。下期消耗时：Dr Rent expense 10000, Cr Prepaid rent 10000（每月转费1万）。"
                         }
                     },
                     // ===== 4. 预付应计收入 =====
@@ -3177,7 +3177,7 @@
                         explanation: {
                             title: "应计收入的会计处理",
                             content: "应计收入(Accrued income)是典型的'先提供服务后收款'场景。例如：12月份出租房屋给租客，但租金1月才收。年末调整时：Dr Accrued income（流动资产增加，代表'别人欠我的'），Cr Income（收入增加，因为服务已提供）。常见例子：应计利息收入、应计租金收入。下期收款时：Dr Bank, Cr Accrued income。",
-                            analogy: "12月房子租出去了但租客还没付钱，年底要记这笔'该收的租金'和'收入'。虽然钱没到账，但服务已经提供了，收入要算今年的。分录：借 应收租金（资产），贷 租金收入。"
+                            analogy: "12月租金5000元应收但租客还没付。年末分录：Dr Accrued income 5000, Cr Rent income 5000。下期收款时：Dr Bank 5000, Cr Accrued income 5000。"
                         }
                     },
                     {
@@ -3187,7 +3187,7 @@
                         explanation: {
                             title: "预收收入的会计处理",
                             content: "预收收入(Prepaid income/Unearned income/Deferred income)是典型的'先收款后提供服务'场景。例如：12月预收了下一年1-6月的租金。年末调整时：Dr Income（收入减少，因为服务还没提供），Cr Prepaid income（流动负债增加，代表'我欠别人的服务'）。常见例子：预收订阅费、预收会员费。下期提供服务后：Dr Prepaid income, Cr Income。",
-                            analogy: "12月收了明年上半年的房租，年底要把这笔'提前收的钱'从今年收入里拿出来，变成'负债'（欠人家服务）。分录：借 租金收入（减少），贷 预收租金（负债）。"
+                            analogy: "12月预收明年上半年租金60000元。年末分录：Dr Rent income 60000, Cr Prepaid income 60000。下期提供服务后：Dr Prepaid income 10000, Cr Rent income 10000（每月转收入1万）。"
                         }
                     },
                     // ===== 5. 折旧 =====
@@ -3198,7 +3198,7 @@
                         explanation: {
                             title: "折旧的会计分录与报表影响",
                             content: "折旧分录的两个科目影响不同报表：① Depreciation expense（折旧费用）→在SPL中作为费用减少利润；② Accumulated depreciation（累计折旧）→在SOFP中作为资产的抵减项，减少资产净值(Carrying amount/NBV)。资产不会直接减少（成本保持不变），而是通过累计折旧间接反映价值下降。",
-                            analogy: "买了10万的车，每年折旧2万：车的原价还是10万（Cost），但你在账上记一笔'已经用掉的价值'（累计折旧）。第三年：原价10万 - 累计折旧6万 = 净值4万。"
+                            analogy: "设备原值100000，每年折旧20000。年末分录：Dr Depreciation expense 20000, Cr Accumulated depreciation 20000。第三年末：账面净值 = 100000 - 60000 = 40000。"
                         }
                     },
                     {
@@ -3229,7 +3229,7 @@
                         explanation: {
                             title: "坏账准备的分录与报表列示",
                             content: "坏账准备是应收账款的抵减项：① 增加准备（预计更多收不回）：Dr 坏账费用(SPL), Cr 坏账准备(SOFP)；② 减少准备（情况好转）：Dr 坏账准备, Cr 坏账费用（相当于冲回）。资产负债表列示：Trade receivables gross - Allowance for receivables = Net receivables。类似折旧的累计和抵减逻辑。",
-                            analogy: "客户欠你100万，你觉得有10%可能收不回，就计提10万准备。报表上显示：应收100万 - 准备10万 = 净值90万。如果明年觉得能收回更多，就减少准备（冲回费用）。"
+                            analogy: "客户欠你100万，你觉得10%可能收不回，计提10万准备。分录：Dr Irrecoverable debts expense 100000, Cr Allowance for receivables 100000。报表上应收账款净值 = 100万 - 10万 = 90万。"
                         }
                     },
                     // ===== 7. 所得税 =====
@@ -3289,7 +3289,7 @@
                         explanation: {
                             title: "应收账款T账户公式（完整版）",
                             content: "这是考试高频公式！应收账款变动的所有项目：增加方（借方）：① Credit sales（赊销）；② Refunds给客户后客户欠款；③ Interest charged（收利息）；④ Dishonoured cheques（客户支票弹票，欠款恢复）。减少方（贷方）：① Cash received（收款）；② Sales returns（销售退回）；③ Bad debts written off（坏账核销）；④ Discounts allowed（给客户的折扣）；⑤ Contra（对冲抵消）。Tip: 求总Sales可以先倒推Credit Sales，再加Cash Sales！",
-                            analogy: "客户欠款账户就像你借给很多人钱的总账：增加欠款（借出去更多、支票弹了又欠你）和减少欠款（还钱、退货、确认收不回来）。期末余额=期初+所有借出-所有收回。"
+                            analogy: "【小计算】期初应收50万，本期赊销120万，收到现金100万，销售退回5万，坏账核销3万，对冲2万。期末应收 = 50 + 120 - 100 - 5 - 3 - 2 = 60万。考试常考倒推：已知其他项求赊销或收款。"
                         }
                     },
                     {
@@ -3299,7 +3299,7 @@
                         explanation: {
                             title: "应付账款T账户公式（完整版）",
                             content: "应付账款变动的所有项目：增加方（贷方）：① Credit purchases（赊购）；② Refunds received from suppliers（收到退款后负债增加）；③ Interest charged by suppliers（供应商加收利息）。减少方（借方）：① Cash paid（付款）；② Purchase returns（采购退回）；③ Discounts received（获得的折扣）；④ Contra（对冲抵消）。Tip: 求总Purchases可以先倒推Credit Purchases，再加Cash Purchases！",
-                            analogy: "你欠供应商钱的总账：增加欠款（又赊购了、收到退款后负债恢复）和减少欠款（付钱、退货、拿到折扣、对冲抵消）。本质就是'欠别人的钱'的加加减减。"
+                            analogy: "【小计算】期初应付30万，本期赊购80万，支付现金70万，采购退回4万，获得折扣1万，对冲2万。期末应付 = 30 + 80 - 70 - 4 - 1 - 2 = 33万。考试常考倒推：已知其他项求赊购或付款。"
                         }
                     },
                     {
@@ -3340,7 +3340,7 @@
                         explanation: {
                             title: "存货损失的会计处理",
                             content: "两种情况：① 未投保（Not insured）：损失自己承担，记为费用。分录：Dr Loss on inventory（费用）, Cr Cost of Sales。损失在利润表费用中列示。② 已投保（Insured）：损失可向保险公司索赔。先确认应收：Dr Insurance claim receivable（流动资产）, Cr Cost of Sales。收到赔款时：Dr Bank, Cr Insurance claim receivable。",
-                            analogy: "手机丢了两种情况：① 没买保险→自己承担损失，记'费用'。② 买了保险→先记'保险公司欠我赔款'（应收），等保险公司打钱过来再销掉应收。"
+                            analogy: "库存被偷损失50000元。未投保：Dr Loss on inventory 50000, Cr Cost of Sales 50000。已投保：Dr Insurance claim receivable 50000, Cr Cost of Sales 50000。收到赔款：Dr Bank 50000, Cr Insurance claim receivable 50000。"
                         }
                     },
                     {
