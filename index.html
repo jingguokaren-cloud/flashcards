@@ -634,8 +634,10 @@
 
         <!-- 控制按钮 -->
         <div class="controls">
-            <button class="control-btn" onclick="revealAll()">显示全部答案</button>
-            <button class="control-btn" onclick="hideAll()">隐藏全部答案</button>
+            <button class="control-btn" id="toggleAnswersBtn" onclick="toggleAllAnswers()"
+                style="background: linear-gradient(135deg, #3b82f6, #2563eb);">👁 显示全部答案</button>
+            <button class="control-btn" id="toggleExplanationsBtn" onclick="toggleAllExplanations()"
+                style="background: linear-gradient(135deg, #f59e0b, #d97706);">💡 显示全部解释</button>
             <button class="control-btn" id="toggleHintsBtn" onclick="toggleHints()"
                 style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">🔤 隐藏中文提示</button>
             <button class="control-btn" onclick="resetProgress()">重置进度</button>
@@ -985,7 +987,7 @@
                     {
                         id: "1-5",
                         category: "企业类型",
-                        question: "<blank>Partnership</blank>（合伙企业）中，普通合伙人承担<blank>unlimited liability</blank>（无限连带责任）。",
+                        question: "<blank>Partnership</blank>（合伙企业）中，普通合伙人承担<blank>unlimited joint and several liability</blank>（无限连带责任）。",
                         explanation: {
                             title: "合伙企业的责任",
                             content: "合伙企业由两人或多人共同拥有和经营。'连带责任'意味着：你的合伙人惹的祸，债主也可以找你来赔！每个合伙人都对企业全部债务负责，而不仅仅是自己那份。所以选合伙人要非常谨慎。",
@@ -1075,7 +1077,7 @@
                     {
                         id: "1-14",
                         category: "报表要素",
-                        question: "资产分为<blank>Non-current assets</blank>（非流动资产，如<blank>PPE</blank>（房产、厂房及设备）、<blank>Intangible assets</blank>（无形资产））和<blank>Current assets</blank>（流动资产，如<blank>Inventory</blank>（存货）、<blank>Receivables</blank>（应收款项）、<blank>Cash</blank>（现金））。",
+                        question: "资产分为<br>&nbsp;&nbsp;• <blank>Non-current assets</blank>（非流动资产），如<blank>PPE</blank>（房产、厂房及设备）、<blank>Intangible assets</blank>（无形资产）<br>&nbsp;&nbsp;• <blank>Current assets</blank>（流动资产），如<blank>Inventory</blank>（存货）、<blank>Receivables</blank>（应收款项）、<blank>Cash</blank>（现金）。",
                         explanation: {
                             title: "流动 vs 非流动",
                             content: "判断标准是\"一年\"：能在一年内变成现金的是流动资产（存货卖掉、应收账款收回）；超过一年的是非流动资产（房子、机器设备）。",
@@ -1152,7 +1154,7 @@
                     {
                         id: "2-2",
                         category: "监管机构",
-                        question: "IFRS Foundation（国际财务报告准则基金会）的主要职能是<blank>monitor</blank>（监管）和<blank>fund</blank>（资金支持）IASB的工作。",
+                        question: "<blank>IFRS Foundation</blank>（国际财务报告准则基金会）的主要职能是<blank>monitor</blank>（监管）和<blank>fund</blank>（资金支持）IASB的工作。",
                         explanation: {
                             title: "IFRS Foundation 的角色",
                             content: "IFRS Foundation就像是IASB的\"老板+财务总监\"。它负责监督IASB的工作，确保准则制定过程规范；同时负责筹集资金，保证IASB有钱运作。",
@@ -1162,7 +1164,7 @@
                     {
                         id: "2-3",
                         category: "监管机构",
-                        question: "IASB（国际会计准则理事会）的主要职能是<blank>develop</blank>（制定）and <blank>approve</blank>（批准）IAS 和 IFRS 准则。",
+                        question: "<blank>IASB</blank>（国际会计准则理事会）的主要职能是<blank>develop</blank>（制定）and <blank>approve</blank>（批准）IAS 和 IFRS 准则。",
                         explanation: {
                             title: "IASB 的核心职能",
                             content: "IASB是真正\"写\"准则的机构！从草案到最终发布，都是IASB来完成。它是整个IFRS体系中最核心的技术机构。",
@@ -1172,7 +1174,7 @@
                     {
                         id: "2-4",
                         category: "监管机构",
-                        question: "IFRS Advisory Council（咨询委员会）的作用是作为IASB与<blank>outside parties</blank>（外部各方）沟通的桥梁，并就IASB的<blank>agenda</blank>（议程）和<blank>timetable</blank>（时间表）提供建议。",
+                        question: "<blank>IFRS Advisory Council</blank>（咨询委员会）的作用是作为IASB与<blank>outside parties</blank>（外部各方）沟通的桥梁，并就IASB的<blank>agenda</blank>（议程）和<blank>timetable</blank>（时间表）提供建议。",
                         explanation: {
                             title: "咨询委员会的咨询角色",
                             content: "IFRS AC就是一个\"智囊团\"，由各行各业的代表组成。他们不制定准则，但会给IASB提建议：\"这个问题很紧迫，应该优先讨论\"或\"这个时间安排不合理\"。",
@@ -1182,7 +1184,7 @@
                     {
                         id: "2-5",
                         category: "监管机构",
-                        question: "IFRS Interpretations Committee（解释委员会）负责就IFRS准则的<blank>application</blank>（应用）发布<blank>guidance</blank>（指导意见），并处理现有准则<blank>not covered</blank>（未涵盖）的报告问题。",
+                        question: "<blank>IFRS Interpretations Committee</blank>（解释委员会）负责就IFRS准则的<blank>application</blank>（应用）发布<blank>guidance</blank>（指导意见），并处理现有准则<blank>not covered</blank>（未涵盖）的报告问题。",
                         explanation: {
                             title: "解释委员会的解释职能",
                             content: "准则写得再详细，实务中也会遇到模糊地带。IFRS IC就是来\"解释\"这些模糊地带的。比如某个交易该怎么处理，准则没直接说，IFRS IC会给出guidance。",
@@ -1192,7 +1194,7 @@
                     {
                         id: "2-6",
                         category: "监管机构",
-                        question: "ISSB（国际可持续准则理事会）的主要职能是制定<blank>sustainability disclosure standards</blank>（可持续性披露标准）。",
+                        question: "<blank>ISSB</blank>（国际可持续准则理事会）的主要职能是制定<blank>sustainability disclosure standards</blank>（可持续性披露标准）。",
                         explanation: {
                             title: "ISSB 与可持续发展",
                             content: "这是一个新机构！随着ESG（环境、社会、治理）越来越重要，ISSB专门负责制定可持续相关的披露准则，比如碳排放、气候风险等信息的披露要求。",
@@ -1205,54 +1207,14 @@
                         question: "IFRS为财务报表列报提供四个方面的指引：<blank>Recognition</blank>（确认）- 何时何处记录；<blank>Measurement</blank>（计量）- 金额是多少；<blank>Presentation</blank>（列报）- 如何分类；<blank>Disclosure</blank>（披露）- 附注展示什么。",
                         explanation: {
                             title: "IFRS 的四大指引",
-                            content: "这四个词是IFRS的核心功能！确认解决\"记不记\"；计量解决\"记多少\"；列报解决\"放哪里\"；披露解决\"怎么说\"。每个会计准则都会涉及这四个方面。",
-                            analogy: "就像写日记：确认=要不要写这件事；计量=花了多少钱；列报=写在哪一页的哪个位置；披露=附加说明这件事的背景。"
+                            content: "这四个词是IFRS的核心功能！Recognition（确认）解决\"记不记、何时记、记到哪个科目\"的问题；Measurement（计量）解决\"记多少钱\"的问题，如用成本还是公允价值；Presentation（列报）解决\"放在报表哪个位置、如何分类\"的问题；Disclosure（披露）解决\"附注里要说明什么细节\"的问题。每个会计准则都会涉及这四个方面。",
+                            analogy: "就像网购收货：Recognition=这个包裹要不要签收（确认）；Measurement=值多少钱（计量）；Presentation=放在家里哪个柜子（列报）；Disclosure=备注这是什么时候买的、从哪里买的（披露）。"
                         }
                     },
                     {
                         id: "2-8",
-                        category: "IFRS作用",
-                        question: "Recognition（确认）回答的问题是：<blank>When</blank>（何时）and <blank>where</blank>（何处）to record?（何时何处记录？）",
-                        explanation: {
-                            title: "确认的本质",
-                            content: "确认是会计的第一步：这笔交易要不要进账簿？什么时候进？进到哪个科目？比如收到订单但没发货，要不要确认收入？答案是不确认，要等发货后才确认。",
-                            analogy: "就像收快递，快递员来了不代表东西是你的（不确认），要等你签收了（满足确认条件），东西才正式属于你（确认）。"
-                        }
-                    },
-                    {
-                        id: "2-9",
-                        category: "IFRS作用",
-                        question: "Measurement（计量）回答的问题是：<blank>What's the amount</blank>（金额是多少）？",
-                        explanation: {
-                            title: "计量的本质",
-                            content: "确认之后要确定金额。金额怎么算？用成本还是用公允价值？比如一块地买时100万，现在值500万，报表上写多少？这就是计量要解决的问题。",
-                            analogy: "就像买股票，你买入价10块，现在市价15块。记账时记10块还是15块？不同的计量基础（成本/公允价值）会给出不同答案。"
-                        }
-                    },
-                    {
-                        id: "2-10",
-                        category: "IFRS作用",
-                        question: "Presentation（列报）回答的问题是：How should items be <blank>classified</blank>（分类）in the financial statements?（项目应如何在财报中分类？）",
-                        explanation: {
-                            title: "列报的本质",
-                            content: "金额确定后，放在报表的哪个位置？是流动资产还是非流动资产？是收入还是其他收益？列报决定了财务报表的结构和信息的呈现方式。",
-                            analogy: "就像整理衣柜，同样的衣服，你可以按颜色分类，也可以按季节分类。列报就是规定财务信息应该怎么\"整理摆放\"。"
-                        }
-                    },
-                    {
-                        id: "2-11",
-                        category: "IFRS作用",
-                        question: "Disclosure（披露）回答的问题是：What information should be shown in the <blank>notes to accounts</blank>（附注）?",
-                        explanation: {
-                            title: "披露的本质",
-                            content: "报表正文放不下的细节都在附注里。比如固定资产用的什么折旧方法、关联方交易有哪些、或有负债是什么情况等。附注是报表的重要补充。",
-                            analogy: "就像一本书的脚注和附录。正文讲大意，脚注解释细节、专业术语、背景信息。读者想深入了解，就去看附注。"
-                        }
-                    },
-                    {
-                        id: "2-12",
                         category: "True and Fair View",
-                        question: "当公司遵循相关会计准则时，其财务报表应呈现<blank>true</blank>（真实）and <blank>fair</blank>（公允）view。",
+                        question: "当公司遵循相关会计准则时，其财务报表应呈现<blank>true and fair view</blank>（真实公允观）。",
                         explanation: {
                             title: "真实公允观",
                             content: "这是财务报表的终极目标！True意味着信息是真实的、没有造假；Fair意味着信息是公正的、没有误导。遵循IFRS就是为了达到这个目标。",
@@ -1260,7 +1222,7 @@
                         }
                     },
                     {
-                        id: "2-13",
+                        id: "2-9",
                         category: "监管机构",
                         question: "IFRS Foundation还负责关注<blank>emerging economies</blank>（新兴经济体）和<blank>SMEs</blank>（中小型实体）的财务报告需求。",
                         explanation: {
@@ -1270,7 +1232,7 @@
                         }
                     },
                     {
-                        id: "2-14",
+                        id: "2-10",
                         category: "监管机构",
                         question: "IFRS Foundation的目标之一是推动各国会计准则与IFRS的<blank>convergence</blank>（趋同）。",
                         explanation: {
@@ -1309,7 +1271,7 @@
                     {
                         id: "3-3",
                         category: "基本质量特征",
-                        question: "<blank>Fundamental</blank>（基本）质量特征包括：<blank>Relevance</blank>（相关性）和<blank>Faithful Representation</blank>（如实表达）。",
+                        question: "<blank>Fundamental quality</blank>（基本质量特征）包括：<blank>Relevance</blank>（相关性）和<blank>Faithful Representation</blank>（如实表达）。",
                         explanation: {
                             title: "两个基本质量特征",
                             content: "这两个是财务信息质量的'地基'！缺一不可。Relevance（相关性）= 这个信息对用户决策有用吗？Faithful Representation（如实表达）= 这个信息真实准确吗？没有相关性的信息是废话，没有如实表达的信息是假话。好的财务报表既要说'对的话'，又要说'有用的话'。",
@@ -1339,7 +1301,7 @@
                     {
                         id: "3-6",
                         category: "增强质量特征",
-                        question: "<blank>Enhancing</blank>（增强）质量特征包括：<blank>Comparability</blank>（可比性）、<blank>Verifiability</blank>（可验证性）、<blank>Timeliness</blank>（及时性）、<blank>Understandability</blank>（可理解性）。",
+                        question: "<blank>Enhancing quality</blank>（增强质量特征）包括：<blank>Comparability</blank>（可比性）、<blank>Verifiability</blank>（可验证性）、<blank>Timeliness</blank>（及时性）、<blank>Understandability</blank>（可理解性）。",
                         explanation: {
                             title: "四个增强质量特征",
                             content: "这四个特征在基本特征之上，让财务信息更好用（enhance=增强）。① Comparability（可比性）——能和别人比、和过去比；② Verifiability（可验证性）——别人能核实你说的对不对；③ Timeliness（及时性）——信息要及时发布，过时的信息没用；④ Understandability（可理解性）——有商业知识的人能看懂。注意：不能为了简单而省略复杂但重要的信息！",
@@ -1449,7 +1411,7 @@
                     {
                         id: "3-17",
                         category: "计量基础",
-                        question: "<blank>Fair Value</blank>（公允价值）：在<blank>orderly transaction</blank>（有序交易）中出售资产所能收到的价格。注意：不是<blank>forced sale</blank>（强制甩卖）价格。",
+                        question: "<blank>Fair Value</blank>（公允价值）：在<blank>orderly transaction</blank>（有序交易）中<blank>sell an asset</blank>（出售资产）所能收到的价格。注意：不是<blank>forced sale</blank>（强制甩卖）价格。",
                         explanation: {
                             title: "公允价值",
                             content: "公允价值(Fair Value)回答的问题是：如果现在在正常市场上卖掉这个资产，能收到多少钱？关键词是'orderly transaction'（有序交易），不是甩卖价或清算价。比如你有一台设备，正常二手市场能卖30万，但如果你破产急售可能只能卖15万——Fair Value是30万，不是15万。Fair Value常用于金融工具、投资性房地产等。",
@@ -1469,7 +1431,7 @@
                     {
                         id: "3-19",
                         category: "计量基础",
-                        question: "<blank>Current Cost</blank>（现行成本）：在计量日获得<blank>equivalent asset</blank>（同等资产）所需的成本。",
+                        question: "<blank>Current Cost</blank>（现行成本）：在<blank>at the measurement date</blank>（计量日）获得<blank>equivalent asset</blank>（同等资产）所需的成本。",
                         explanation: {
                             title: "现行成本",
                             content: "现行成本(Current Cost)回答的问题是：如果今天要重新购买一个同样的资产，需要花多少钱？这和历史成本的区别：历史成本看过去花了多少，现行成本看现在要花多少。这在通货膨胀时体现明显：5年前买的设备花50万，现在同款要花80万，现行成本就是80万。用现行成本计量的好处：更真实反映企业'重置资产'的能力。",
@@ -1543,7 +1505,7 @@
                     {
                         id: "5-1",
                         category: "原始凭证",
-                        question: "原始凭证（Source documents）是所有会计记录的<blank>Foundation</blank>（基础），为业务交易提供<blank>Evidence</blank>（证据）。",
+                        question: "<blank>原始凭证</blank>（Source documents）是所有会计记录的<blank>Foundation</blank>（基础），为业务交易提供<blank>Evidence</blank>（证据）。",
                         explanation: {
                             title: "原始凭证的作用",
                             content: "原始凭证是会计记录的基础！没有发票、收据、订单等原始凭证，会计就没有记账依据。为什么重要？① 证明交易确实发生了；② 审计时需要核实；③ 防止欺诈和错误。",
@@ -1553,7 +1515,7 @@
                     {
                         id: "5-2",
                         category: "原始凭证",
-                        question: "供应商出具的凭证：<blank>Quotation</blank>（报价单）、<blank>Sales order</blank>（销售订单）、<blank>Invoice</blank>（发票）、<blank>Credit note</blank>（贷方通知单）、<blank>Statement</blank>（对账单）。",
+                        question: "<blank>Supplier</blank>（供应商）出具的凭证：<blank>Quotation</blank>（报价单）、<blank>Sales order</blank>（销售订单）、<blank>Invoice</blank>（发票）、<blank>Credit note</blank>（贷方通知单）、<blank>Statement</blank>（对账单）。",
                         explanation: {
                             title: "供应商发出的凭证",
                             content: "供应商（卖方）会发出这些凭证：Quotation（报价单）=告诉你价格；Sales order=确认你的订单；Invoice（发票）=要求你付款；Credit note=给你减钱了；Statement=总结你欠多少。",
@@ -1563,7 +1525,7 @@
                     {
                         id: "5-3",
                         category: "原始凭证",
-                        question: "客户出具的凭证：<blank>Purchase order</blank>（采购订单）、<blank>Goods received note</blank>（收货单）、<blank>Debit note</blank>（借方通知单）、<blank>Remittance advice</blank>（汇款通知）。",
+                        question: "<blank>Customer</blank>（客户）出具的凭证：<blank>Purchase order</blank>（采购订单）、<blank>Goods received note</blank>（收货单）、<blank>Debit note</blank>（借方通知单）、<blank>Remittance advice</blank>（汇款通知）。",
                         explanation: {
                             title: "客户发出的凭证",
                             content: "客户（买方）会发出这些凭证：Purchase order=我要买这个；GRN（收货单）=确认收到货了；Debit note=要求你给我退款；Remittance advice=我付钱了。",
@@ -1631,7 +1593,7 @@
                     {
                         id: "6-1",
                         category: "交易分录",
-                        question: "Purchase of goods（采购商品）的分录：<br>Dr <blank>Purchases</blank>（采购）<br>Cr Bank or <blank>Trade payables</blank>（应付账款）。",
+                        question: "<blank>Purchase of goods</blank>（采购商品）的分录：<br>Dr <blank>Purchases</blank>（采购）<br>Cr Bank or <blank>Trade payables</blank>（应付账款）。",
                         explanation: {
                             title: "采购商品分录",
                             content: "采购商品增加了费用（Purchases借方），同时要么现金减少（Cr Bank），要么形成负债（Cr Trade payables）。",
@@ -1641,7 +1603,7 @@
                     {
                         id: "6-2",
                         category: "交易分录",
-                        question: "Sales of goods（销售商品）的分录：<br>Dr Bank or <blank>Trade receivables</blank>（应收账款）<br>Cr <blank>Sales</blank>（销售收入）。",
+                        question: "<blank>Sales of goods</blank>（销售商品）的分录：<br>Dr Bank or <blank>Trade receivables</blank>（应收账款）<br>Cr <blank>Sales</blank>（销售收入）。",
                         explanation: {
                             title: "销售商品分录",
                             content: "销售商品产生收入（Sales贷方），同时要么收到现金（Dr Bank），要么形成债权（Dr Trade receivables）。",
@@ -1651,7 +1613,7 @@
                     {
                         id: "6-3",
                         category: "交易分录",
-                        question: "Purchases returns（采购退回）又称 Return <blank>outwards</blank>（向外退回）：<br>Dr Trade payables<br>Cr <blank>Purchases returns</blank>（采购退回）。",
+                        question: "<blank>Purchases returns</blank>（采购退回）又称 Return <blank>outwards</blank>（向外退回）：<br>Dr <blank>Trade payables</blank>（应付账款）<br>Cr <blank>Purchases returns</blank>（采购退回）。",
                         explanation: {
                             title: "采购退回分录",
                             content: "Outwards = 向外 = 你把货退回给供应商。退货后你欠供应商的钱减少（Dr Trade payables），采购也要冲减（Cr Purchases returns）。",
@@ -1661,7 +1623,7 @@
                     {
                         id: "6-4",
                         category: "交易分录",
-                        question: "Sales returns（销售退回）又称 Return <blank>inwards</blank>（向内退回）：<br>Dr <blank>Sales returns</blank>（销售退回）<br>Cr Trade receivables。",
+                        question: "<blank>Sales returns</blank>（销售退回）又称 Return <blank>inwards</blank>（向内退回）：<br>Dr <blank>Sales returns</blank>（销售退回）<br>Cr <blank>Trade receivables</blank>（应收账款）。",
                         explanation: {
                             title: "销售退回分录",
                             content: "Inwards = 向内 = 客户把货退回给你。退货冲减收入（Dr Sales returns），客户欠你的钱也减少（Cr Trade receivables）。",
@@ -1672,7 +1634,7 @@
                     {
                         id: "6-5",
                         category: "定期盘存制",
-                        question: "Gross Profit（毛利润）= <blank>Sales</blank>（销售收入，扣除销售退回）- <blank>Cost of goods sold</blank>（销售成本）。",
+                        question: "<blank>Gross Profit</blank>（毛利润）= <blank>Sales</blank>（销售收入，扣除销售退回）- <blank>Cost of goods sold</blank>（销售成本）。",
                         explanation: {
                             title: "毛利润公式",
                             content: "毛利润是销售收入减去直接成本（进货成本），还没扣除销售费用、管理费用等。这是最基本的盈利指标。",
@@ -1692,7 +1654,7 @@
                     {
                         id: "6-7",
                         category: "定期盘存制",
-                        question: "Carriage <blank>inwards</blank>（进货运费）计入<blank>purchase cost</blank>（采购成本）；Carriage <blank>outwards</blank>（出货运费）作为<blank>selling expense</blank>（销售费用）。",
+                        question: "&nbsp;&nbsp;• Carriage <blank>inwards</blank>（进货运费）计入<blank>purchase cost</blank>（采购成本）；&nbsp;&nbsp;• Carriage <blank>outwards</blank>（出货运费）作为<blank>selling expense</blank>（销售费用）。",
                         explanation: {
                             title: "进货运费 vs 出货运费",
                             content: "Inwards（进来）= 把货运进仓库的运费 → 是存货成本的一部分。Outwards（出去）= 把货送给客户的运费 → 是销售费用。",
@@ -1702,7 +1664,7 @@
                     {
                         id: "6-8",
                         category: "折扣",
-                        question: "<blank>Trade</blank> discount（商业折扣）目的是 Encourage <blank>sales</blank>（鼓励销售），会计处理是直接从标价中扣减。",
+                        question: "<blank>Trade</blank> discount（商业折扣）目的是鼓励<blank>sales</blank>（销售），会计处理是直接从标价中扣减。",
                         explanation: {
                             title: "商业折扣特点",
                             content: "Trade discount = 打折促销。标价100打8折就直接按80记账，100块钱从来不进账。折扣发生在交易时刻。",
@@ -1712,7 +1674,7 @@
                     {
                         id: "6-9",
                         category: "折扣",
-                        question: "<blank>Cash</blank> discount / <blank>Settlement</blank> discount（现金折扣）目的是 Encourage <blank>early payment</blank>（鼓励提前付款）。",
+                        question: "<blank>Cash</blank> discount / <blank>Settlement</blank> discount（现金折扣）目的是鼓励<blank>early payment</blank>（提前付款）。",
                         explanation: {
                             title: "现金折扣特点",
                             content: "Cash/Settlement discount = 早付钱就打折。比如\"10天内付款可享2%折扣\"（2/10, n/30）。这不是降价，是鼓励客户快点给钱。",
@@ -1762,11 +1724,11 @@
                     {
                         id: "6-14",
                         category: "销售税",
-                        question: "已税务登记（<blank>Registered</blank>）的企业：分别记录销项税和进项税；收入和支出按<blank>net of sales tax</blank>（不含税）记录。",
+                        question: "已税务登记（<blank>Registered</blank>）的企业：<br>&nbsp;&nbsp;• 收入和支出按<blank>net of sales tax</blank>（不含税）记录。<br>&nbsp;&nbsp;• 应收账款和应付账款按<blank>gross of sales tax</blank>（含税总额）记录。",
                         explanation: {
                             title: "已注册企业的税务处理",
-                            content: "注册了的企业可以抵扣进项税，所以收入、成本都按不含税金额记账，税额单独记录在专门的税务科目里。",
-                            analogy: "正规企业开增值税发票，账上收入1000是不含税价，税130另记。最后销项税减进项税交给税务局。"
+                            content: "注册了的企业可以抵扣进项税，所以收入、成本都按不含税金额记账，税额单独记录在专门的税务科目里。但客户欠你的钱（应收）和你欠供应商的钱（应付）是含税的！比如卖100块+税20，收入记100（不含税），应收账款记120（含税）。",
+                            analogy: "开发票的企业：卖1000块+税130，账上收入是1000（不含税），但客户欠你1130（含税）。税130另记在销项税科目。"
                         }
                     },
                     {
@@ -1782,20 +1744,11 @@
                     {
                         id: "6-16",
                         category: "销售税",
-                        question: "对于已注册企业：<blank>Trade receivables</blank>（应收账款）和 <blank>Trade payables</blank>（应付账款）按<blank>gross of sales tax</blank>（含税总额）记录。",
-                        explanation: {
-                            title: "应收应付的含税处理",
-                            content: "虽然收入按不含税记，但客户欠你的钱是含税的！比如卖100块+税20，应收账款是120。税额另记在Output tax科目。",
-                            analogy: "餐厅账单100+税10=110，客户欠你110（含税），不是100。税的部分你代收后要交给税务局。"
-                        }
-                    },
-                    {
-                        id: "6-17",
-                        category: "销售税",
-                        question: "销售税余额在财务报表中：若应付（>0）则列为<blank>Current liability</blank>（流动负债）；若可退（<0）则列为<blank>Current asset</blank>（流动资产）。",
+                        question: "销售税余额在财务报表中：若应付(>0)则列为<blank>Current liability</blank>（流动负债）；若可退(<0)则列为<blank>Current asset</blank>（流动资产）。",
                         explanation: {
                             title: "销售税的报表列示",
                             content: "销项税>进项税 → 你要交钱给税务局 → 负债。销项税<进项税 → 税务局要退钱给你 → 资产。",
+                            analogy: "就像你和朋友AA吃饭后结算：你先垫付了200，朋友只付了你150，他还欠你50（你的资产）。反过来，如果你只付了150但应该付200，你就欠他50（你的负债）。"
                         }
                     }
                 ]
@@ -1822,7 +1775,7 @@
                         explanation: {
                             title: "存货的类别",
                             content: "商贸企业主要是purchased goods；制造企业有三类：RM（原材料）→ WIP（半成品）→ Finished goods（成品）。Consumables是辅助生产的消耗品。",
-                            analogy: "面包店：面粉是RM，揉好的面团是WIP，烤好的面包是Finished goods，包装袋是Consumables。"
+                            analogy: "面包店：面粉是RM，揉好的面团是WIP，烤好的面包是Finished goods。"
                         }
                     },
                     {
@@ -1868,7 +1821,7 @@
                     {
                         id: "7-7",
                         category: "初始计量",
-                        question: "存货成本不包括：<blank>Finished goods storage cost</blank>（产成品存储成本）、<blank>Carriage outwards</blank>（出货运费）、<blank>Administrative overheads</blank>（行政间接费用）。",
+                        question: "存货成本不包括：<br>&nbsp;&nbsp;• <blank>Finished goods storage cost</blank>（产成品存储成本）、<br>&nbsp;&nbsp;• <blank>Carriage outwards</blank>（出货运费）、<br>&nbsp;&nbsp;• <blank>Administrative overheads</blank>（行政间接费用）。",
                         explanation: {
                             title: "不计入存货成本的项目",
                             content: "这些成本与生产过程无关，属于期间费用（Expensed），直接计入损益表：① 卖不出去放仓库的费用（Finished goods storage）；② 卖给客户的运费（Carriage outwards）；③ 办公室人员工资等（Administrative overheads）。",
@@ -1878,7 +1831,7 @@
                     {
                         id: "7-8",
                         category: "初始计量",
-                        question: "存储成本处理：生产前的原材料/在产品的存储<blank>capitalised</blank>（资本化）计入存货；产成品的产后存储<blank>expensed</blank>（费用化）计入利润表。",
+                        question: "存储成本处理：<br>&nbsp;&nbsp;•生产前的原材料/在产品的存储<blank>capitalised</blank>（资本化）计入存货；<br>&nbsp;&nbsp;•产成品的产后存储<blank>expensed</blank>（费用化）计入利润表。",
                         explanation: {
                             title: "存储成本的两种处理",
                             content: "生产过程中必要的仓储（如原料等待加工）→ 资本化；生产完成后的仓储（如成品放仓库等卖）→ 费用化。",
@@ -1888,7 +1841,7 @@
                     {
                         id: "7-9",
                         category: "存货计价",
-                        question: "存货计价方法包括：<blank>Specific identification</blank>（个别计价法）、<blank>FIFO</blank>（先进先出法）和 <blank>AVCO</blank>（加权平均法）。",
+                        question: "存货计价方法包括：<br>&nbsp;&nbsp;• <blank>Specific identification</blank>（个别计价法）、<br>&nbsp;&nbsp;• <blank>FIFO</blank>（先进先出法）<br>&nbsp;&nbsp;• <blank>AVCO</blank>（加权平均法）。",
                         explanation: {
                             title: "三种存货计价方法",
                             content: "① Specific identification（个别计价法）= 逐一识别每件存货的成本，适用于高价值、可区分的商品（如珠宝、汽车）；② FIFO（First In First Out）= 假设先买的先卖；③ AVCO（Weighted Average Cost）= 按加权平均单价计算。",
@@ -1898,7 +1851,7 @@
                     {
                         id: "7-10",
                         category: "存货计价",
-                        question: "<blank>FIFO</blank>（先进先出）假设先收到的货物先出售，期末存货按<blank>latest price</blank>（最新价格）计价。在<blank>Inflation</blank>（通货膨胀）时期，FIFO 会导致<blank>lower</blank>（较低）COGS、<blank>higher</blank>（较高）closing inventory 和 profit；在<blank>Deflation</blank>（通货紧缩）时期则相反，会导致<blank>higher</blank>（较高）COGS、<blank>lower</blank>（较低）closing inventory 和 profit。注意：<blank>LIFO</blank>（后进先出法）在IFRS下不允许使用。",
+                        question: "<blank>FIFO</blank>（先进先出）假设先收到的货物先出售，期末存货按<blank>latest price</blank>（最新价格）计价。<br>&nbsp;&nbsp;•在<blank>Inflation</blank>（通货膨胀）时期，FIFO 会导致<blank>lower</blank>（较低）COGS、<blank>higher</blank>（较高）期末存货和利润；<br>&nbsp;&nbsp;•在<blank>Deflation</blank>（通货紧缩）时期则相反，会导致<blank>higher</blank>（较高）COGS、<blank>lower</blank>（较低）期末存货和利润。<br>注意：<blank>LIFO</blank>（后进先出法）在IFRS下不允许使用。",
                         explanation: {
                             title: "FIFO 的核心假设与通胀/紧缩影响",
                             content: "First In First Out = 先进来的货先卖掉，期末剩下的是最后买进来的那批。通胀时：FIFO先卖老的（便宜的）→ COGS低、存货高、利润高。紧缩时价格下跌：FIFO先卖老的（贵的）→ COGS高、存货低、利润低。LIFO在IFRS下禁止使用，因为它在通胀时会低估存货价值。",
@@ -3764,6 +3717,38 @@
             }
         }
 
+        // 切换全部答案显示/隐藏
+        let allAnswersRevealed = false;
+        function toggleAllAnswers() {
+            allAnswersRevealed = !allAnswersRevealed;
+            const btn = document.getElementById('toggleAnswersBtn');
+            if (allAnswersRevealed) {
+                document.querySelectorAll('.blank').forEach(b => b.classList.add('revealed'));
+                btn.innerHTML = '👁 隐藏全部答案';
+                btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+            } else {
+                document.querySelectorAll('.blank').forEach(b => b.classList.remove('revealed'));
+                btn.innerHTML = '👁 显示全部答案';
+                btn.style.background = 'linear-gradient(135deg, #3b82f6, #2563eb)';
+            }
+        }
+
+        // 切换全部解释显示/隐藏
+        let allExplanationsShown = false;
+        function toggleAllExplanations() {
+            allExplanationsShown = !allExplanationsShown;
+            const btn = document.getElementById('toggleExplanationsBtn');
+            if (allExplanationsShown) {
+                document.querySelectorAll('.explanation').forEach(exp => exp.classList.add('show'));
+                btn.innerHTML = '💡 隐藏全部解释';
+                btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+            } else {
+                document.querySelectorAll('.explanation').forEach(exp => exp.classList.remove('show'));
+                btn.innerHTML = '💡 显示全部解释';
+                btn.style.background = 'linear-gradient(135deg, #f59e0b, #d97706)';
+            }
+        }
+
         function markCard(cardId, status) {
             if (cardProgress[cardId] === status) {
                 delete cardProgress[cardId];
@@ -3775,13 +3760,14 @@
             updateStats();
         }
 
+        // 保留兼容函数
         function revealAll() {
-            document.querySelectorAll('.blank').forEach(b => b.classList.add('revealed'));
+            if (!allAnswersRevealed) toggleAllAnswers();
         }
 
         function hideAll() {
-            document.querySelectorAll('.blank').forEach(b => b.classList.remove('revealed'));
-            document.querySelectorAll('.explanation').forEach(e => e.classList.remove('show'));
+            if (allAnswersRevealed) toggleAllAnswers();
+            if (allExplanationsShown) toggleAllExplanations();
         }
 
         // 切换中文提示显示/隐藏
