@@ -2469,7 +2469,7 @@
                     {
                         id: "11-7",
                         category: "坏账准备",
-                        question: "首次计提备抵分录：<br>Dr <blank>Irrecoverable debts expense</blank>（SPL）<br>Cr <blank>Allowance for receivables</blank>（SOFP）。<br><blank>decrease</blank>（减少）。",
+                        question: "首次计提备抵分录：<br>Dr <blank>Irrecoverable debts expense</blank>（SPL）<br>Cr <blank>Allowance for receivables</blank>（SOFP）。",
                         explanation: {
                             title: "备抵的账务处理",
                             content: "计提备抵：增加费用（减少利润），增加备抵账户（减少净应收账款）。备抵是应收账款的'对冲科目'，在SOFP上列示为应收账款的减项。所以存在备抵会减少流动资产总额、减少净资产。",
@@ -2946,7 +2946,7 @@
                     {
                         id: "15-7",
                         category: "对冲处理",
-                        question: "<blank>Contra entry</blank>（对冲分录）：同一公司既是客户又是供应商时，可通过<br>Dr <blank>Trade Payables</blank>（借应付）, <br>Cr <blank>Trade Receivables</blank>（贷应收）进行对冲抵消，减少双方的<blank>net balance</blank>（净余额）。",
+                        question: "<blank>Contra entry</blank>（对冲分录）：同一公司既是客户又是供应商时，可通过<br>Dr <blank>Trade Payables</blank>（借应付）, <br>Cr <blank>Trade Receivables</blank>（贷应收）<br>进行对冲抵消，减少双方的<blank>net balance</blank>（净余额）。",
                         explanation: {
                             title: "对冲分录的会计处理",
                             content: "当同一个公司既是你的客户（欠你钱）又是你的供应商（你欠他钱）时，可以进行对冲。例如：A公司欠你5000（在SLCA借方），你欠A公司3000（在PLCA贷方）。对冲分录：Dr Trade Payables 3000, Cr Trade Receivables 3000。结果：你只需向A公司收取净额5000-3000=2000。对冲不影响损益，只是简化往来。考试常见陷阱：对冲分录的方向容易记错！",
@@ -3278,14 +3278,14 @@
                         explanation: {
                             title: "用毛利率/加成率推算销售成本",
                             content: "这是考试核心公式！两种情况：① 题目给Margin(毛利率)30%：说明毛利占售价30%，那成本占售价70%，所以COGS = Sales × 70%。② 题目给Markup(加成率)50%：说明售价=成本×1.5，倒推COGS = Sales ÷ 1.5 = Sales × (1/1.5) = Sales × 66.67%。记住：Margin用减法(1-%)，Markup用除法(1+%)！",
-                            analogy: "商场打7折（30% off）：原价100的东西打折后70块→Sale×(1-30%)。成本加价50%定价：成本100加50%变150→反过来，知道售价150求成本就是150÷1.5=100。"
+                            analogy: "你卖咖啡100块一杯，其中30块是你的毛利（Margin=30%），70块是原材料成本。所以知道销售额反推成本：成本 = 100 × (1-30%) = 70块。你做一杯咖啡成本100块，加价50%卖出（Markup=50%），售价 = 100 × 1.5 = 150块。反过来，知道售价150求成本：成本 = 150 ÷ 1.5 = 100块。"
                         }
                     },
                     // ===== 2. 公式推导 =====
                     {
                         id: "18-3",
                         category: "公式推导",
-                        question: "应收账款控制账户（SLCA）完整公式：<br><blank>Closing TR</blank>（期末应收账款）= <blank>Opening TR</blank>（期初应收账款）+ <blank>Credit Sales</blank>（赊销）+ <blank>Refunds</blank>（退款）+ <blank>Interest Charged</blank>（收取利息）+ <blank>Dishonoured Cheques</blank>（退票）- <blank>Cash Received</blank>（收到现金）- <blank>Sales Returns</blank>（销售退回）- <blank>Bad Debts W/Off</blank>（坏账核销）- <blank>Contra</blank>（对冲）。",
+                        question: "应收账款控制账户（SLCA）完整公式：<br><blank>Closing TR</blank>（期末应收账款）= <blank>Opening TR</blank>（期初应收账款）+ <blank>Credit Sales</blank>（赊销）+ <blank>Refunds</blank>（退款）+ <blank>Interest Charged</blank>（收取利息）+ <blank>Dishonoured Cheques</blank>（退票）- <blank>Cash Received</blank>（收到现金）- <blank>Sales Returns</blank>（销售退回）- <blank>Discounts Allowed</blank>（给客户的折扣）- <blank>Bad Debts W/Off</blank>（坏账核销）- <blank>Contra</blank>（对冲）。",
                         explanation: {
                             title: "应收账款T账户公式（完整版）",
                             content: "这是考试高频公式！应收账款变动的所有项目：增加方（借方）：① Credit sales（赊销）；② Refunds给客户后客户欠款；③ Interest charged（收利息）；④ Dishonoured cheques（客户支票弹票，欠款恢复）。减少方（贷方）：① Cash received（收款）；② Sales returns（销售退回）；③ Bad debts written off（坏账核销）；④ Discounts allowed（给客户的折扣）；⑤ Contra（对冲抵消）。Tip: 求总Sales可以先倒推Credit Sales，再加Cash Sales！",
@@ -3326,11 +3326,11 @@
                     {
                         id: "18-7",
                         category: "存货损失",
-                        question: "存货损失计算三步法：<br>① Calculate <blank>actual COGS</blank>（计算正常销货成本）：<br>&nbsp;&nbsp;= Sales × (1 - <blank>Margin</blank> %) 或 = Sales ÷ (1 + <blank>Markup</blank> %)；<br>② Calculate <blank>derived COGS</blank>（计算推导销货成本）：<br>&nbsp;&nbsp;= <blank>Opening inventory</blank> + <blank>Purchases</blank> - <blank>Actual closing inventory</blank>（实际期末存货）；<br>③ <blank>Difference</blank>（差额）= <blank>Cost of goods destroyed or stolen</blank>（毁损或被盗商品成本）。",
+                        question: "存货损失计算三步法：<br>① Calculate <blank>expected COGS</blank>（计算预期销货成本）：<br>&nbsp;&nbsp;= Sales × (1 - <blank>Margin</blank> %) 或 = Sales ÷ (1 + <blank>Markup</blank> %)；<br>② Calculate <blank>implied COGS</blank>（计算账面推导成本）：<br>&nbsp;&nbsp;= <blank>Opening inventory</blank> + <blank>Purchases</blank> - <blank>Actual closing inventory</blank>（实际期末存货）；<br>③ <blank>Difference</blank>（差额）= <blank>Cost of goods destroyed or stolen</blank>（毁损或被盗商品成本）。",
                         explanation: {
                             title: "存货损失计算步骤",
-                            content: "【核心思路】用两种方法算COGS，差额就是被偷/毁的货。① Actual COGS（理论值）：根据销售额和利润率算出'正常情况下卖了多少货'。② Derived COGS（账面值）：期初+采购-实际剩余，算出'账上显示卖了多少货'。③ 差额：账上算卖了10万的货，但理论上只该卖8万？多出的2万就是被偷的！",
-                            analogy: "打个比方：你开便利店，这个月销售额10万，利润率20%，正常应该卖掉8万成本的货（Actual COGS）。但你盘点发现：期初5万+进货10万-现在只剩5万=账上显示卖了10万的货（Derived COGS）。多卖的2万去哪儿了？没卖出去，是被偷了！差额2万就是存货损失。"
+                            content: "【核心思路】用两种方法算COGS，差额就是被偷/毁的货。① Expected COGS（预期值）：根据销售额和利润率算出'正常情况下卖了多少货'。② Implied COGS（账面推导值）：期初+采购-实际剩余，算出'账上显示卖了多少货'。③ 差额：账上算卖了10万的货，但理论上只该卖8万？多出的2万就是被偷的！",
+                            analogy: "打个比方：你开便利店，这个月销售额10万，利润率20%，正常应该卖掉8万成本的货（Expected COGS）。但你盘点发现：期初5万+进货10万-现在只剩5万=账上显示卖了10万的货（Implied COGS）。多卖的2万去哪儿了？没卖出去，是被偷了！差额2万就是存货损失。"
                         }
                     },
                     {
@@ -3350,7 +3350,7 @@
                         explanation: {
                             title: "盘点日调整（Inventory count adjustment）",
                             content: "实务中存货盘点可能在资产负债表日之后进行（如5月31日报表，6月4日盘点）。需要从盘点日倒推回报表日：① 盘点日存货 - 期间采购（新进的不算31号的）+ 期间销售成本（卖掉的31号还有）+ 期间退货（退给供应商的31号还有）= 报表日存货。口诀：要得到更早的存货，把期间'进来的'减掉，'出去的'加回！",
-                            analogy: "你6月4日数冰箱里有10个苹果，要算5月31日有多少：6月1-4日买了3个（减掉），吃了2个（加回），送人1个（加回）= 10-3+2+1 = 10个。31号实际有10个。"
+                            analogy: "你6月4日数冰箱里有8个苹果，要算5月31日有多少：6月1-4日买了3个（减掉，31号还没买）、吃了2个（加回，31号还有）、退回超市1个（加回，31号还在冰箱）= 8 - 3 + 2 + 1 = 8个。31号实际有8个苹果。"
                         }
                     },
                     // ===== 5. 利润计算 =====
