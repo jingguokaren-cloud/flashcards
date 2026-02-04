@@ -697,7 +697,8 @@
                         onclick="revealBlank(this)">Present obligation</span><span class="hint-text">（现时义务）</span>；②
                     <span class="blank" onclick="revealBlank(this)">Probable</span><span
                         class="hint-text">（很可能，&gt;50%）</span>经济利益流出；③ <span class="blank"
-                        onclick="revealBlank(this)">Reliable estimate</span><span class="hint-text">（可靠计量）</span>。</div>
+                        onclick="revealBlank(this)">Reliable estimate</span><span class="hint-text">（可靠计量）</span>。
+                </div>
                 <div class="card-actions">
                     <button class="btn btn-toggle" id="toggle-answer-12-2" onclick="toggleCardBlanks('12-2')">
                         <span>👁</span> 显示答案
@@ -3600,22 +3601,11 @@
                 name: "第十八章 不完整记录",
                 categories: ["重建方法", "Margin与Markup", "公式推导", "存货损失", "利润计算"],
                 cards: [
-                    // ===== 1. 重建方法 =====
-                    {
-                        id: "18-1",
-                        category: "重建方法",
-                        question: "<blank>Incomplete records</blank>（不完整记录）是当企业<blank>lacks a complete accounting system</blank>（没有完整会计系统）时，需要通过各种方法<blank>reconstruct</blank>（重建）账目和财务信息。",
-                        explanation: {
-                            title: "不完整记录的背景",
-                            content: "小企业或个体户（sole trader）可能没有规范的复式记账系统，只有银行流水、收据、存货盘点等零散信息。会计师需要像'侦探'一样，利用这些碎片化的证据（如银行对账单、采购发票、销售收据、期初期末资产清单等），通过各种公式和逻辑推理，拼凑出完整的财务报表。FA考试这章主要考查：① 用控制账户公式倒推销售或采购；② 用毛利率/加成率推算销售成本；③ 用净资产变动推算利润。",
-                            analogy: "就像侦探破案：犯罪现场没有完整的监控录像，只有碎片证据（指纹、脚印、证人口供）。侦探需要把这些线索拼起来还原案情。不完整记录也是这样：没有完整账本，但有银行流水、存货盘点、收据——会计师用公式推理'还原'财务全貌。"
-                        }
-                    },
-                    // ===== 2. Margin与Markup =====
+                    // ===== 1. Margin与Markup =====
                     {
                         id: "18-2",
                         category: "Margin与Markup",
-                        question: "<blank>Margin</blank>（毛利率）= Gross Profit ÷ <blank>Sales</blank>，分母是<blank>售价</blank>；<blank>Markup</blank>（加成率）= Gross Profit ÷ <blank>Cost of Sales</blank>，分母是<blank>成本</blank>。",
+                        question: "<blank>Margin</blank>（毛利率）= <blank>Gross Profit</blank>（毛利） ÷ <blank>Sales</blank>（售价），分母是<blank>Sales</blank>（售价）；<br><blank>Markup</blank>（加成率）= <blank>Gross Profit</blank>（毛利） ÷ <blank>Cost of Sales</blank>（成本），分母是<blank>Cost of Sales</blank>（成本）。",
                         explanation: {
                             title: "Margin与Markup的定义区别",
                             content: "这是考试最常见的陷阱！两者都表示利润比例，但分母不同：① Margin(毛利率)：以销售额为分母，表示'从售价里赚了多少%'。例如售价100，利润20，Margin=20%。② Markup(加成率)：以成本为分母，表示'在成本上加了多少%'。例如成本80，利润20，Markup=25%。注意：同样的利润额，用不同分母算出来的百分比不一样！",
@@ -3625,28 +3615,18 @@
                     {
                         id: "18-3",
                         category: "Margin与Markup",
-                        question: "Margin与Markup转换公式：<br>• 已知Margin 30%，求COGS：COGS = Sales × <blank>(1 - 30%)</blank> = Sales × 70%；<br>• 已知Markup 50%，求COGS：COGS = Sales ÷ <blank>(1 + 50%)</blank> = Sales ÷ 1.5。",
+                        question: "Margin与Markup转换公式：<br>• 已知<blank>Margin</blank>（毛利率）30%，求COGS：<blank>COGS</blank>（销售成本）= <blank>Sales</blank>（销售额）× <blank>(1 - 30%)</blank>（1-毛利率）；<br>• 已知<blank>Markup</blank>（加成率）50%，求COGS：<blank>COGS</blank>（销售成本）= <blank>Sales</blank>（销售额）÷ <blank>(1 + 50%)</blank>（1+加成率）。",
                         explanation: {
                             title: "用毛利率/加成率推算销售成本",
                             content: "这是考试核心公式！两种情况：① 题目给Margin(毛利率)30%：说明毛利占售价30%，那成本占售价70%，所以COGS = Sales × 70%。② 题目给Markup(加成率)50%：说明售价=成本×1.5，倒推COGS = Sales ÷ 1.5 = Sales × (1/1.5) = Sales × 66.67%。记住：Margin用减法(1-%)，Markup用除法(1+%)！",
                             analogy: "商场打7折（30% off）：原价100的东西打折后70块→Sale×(1-30%)。成本加价50%定价：成本100加50%变150→反过来，知道售价150求成本就是150÷1.5=100。"
                         }
                     },
-                    {
-                        id: "18-4",
-                        category: "Margin与Markup",
-                        question: "Margin与Markup的换算：<br>• Margin 25% 相当于 Markup <blank>33.33%</blank>（1/3）；<br>• Margin 20% 相当于 Markup <blank>25%</blank>（1/4）；<br>• Markup 50% 相当于 Margin <blank>33.33%</blank>（1/3）。",
-                        explanation: {
-                            title: "Margin与Markup的常用换算",
-                            content: "换算技巧：设Sales=100，Margin=25%则GP=25，COS=75，所以Markup=25/75=33.33%。常见对照：① Margin 25% ↔ Markup 33.33%（1/3）；② Margin 20% ↔ Markup 25%；③ Margin 33.33% ↔ Markup 50%。考试时注意看清题目给的是'on sales'(Margin)还是'on cost'(Markup)！",
-                            analogy: "把一杯水看成销售额100ml：毛利25ml(Margin=25%)，成本75ml(剩下的)。此时Markup=25/75=1/3≈33.33%。同一杯水的比例，看法不同数字就不同。"
-                        }
-                    },
-                    // ===== 3. 公式推导 =====
+                    // ===== 2. 公式推导 =====
                     {
                         id: "18-5",
                         category: "公式推导",
-                        question: "应收账款控制账户（SLCA）完整公式：<br>Closing TR = Opening TR + <blank>Credit Sales</blank> + Refunds + Interest Charged + <blank>Dishonoured Cheques</blank> - Cash Received - <blank>Sales Returns</blank> - Bad Debts W/Off - <blank>Contra</blank>。",
+                        question: "应收账款控制账户（SLCA）完整公式：<br><blank>Closing TR</blank>（期末应收账款）= <blank>Opening TR</blank>（期初应收账款）+ <blank>Credit Sales</blank>（赊销）+ <blank>Refunds</blank>（退款）+ <blank>Interest Charged</blank>（收取利息）+ <blank>Dishonoured Cheques</blank>（退票）- <blank>Cash Received</blank>（收到现金）- <blank>Sales Returns</blank>（销售退回）- <blank>Bad Debts W/Off</blank>（坏账核销）- <blank>Contra</blank>（对冲）。",
                         explanation: {
                             title: "应收账款T账户公式（完整版）",
                             content: "这是考试高频公式！应收账款变动的所有项目：增加方（借方）：① Credit sales（赊销）；② Refunds给客户后客户欠款；③ Interest charged（收利息）；④ Dishonoured cheques（客户支票弹票，欠款恢复）。减少方（贷方）：① Cash received（收款）；② Sales returns（销售退回）；③ Bad debts written off（坏账核销）；④ Discounts allowed（给客户的折扣）；⑤ Contra（对冲抵消）。Tip: 求总Sales可以先倒推Credit Sales，再加Cash Sales！",
@@ -3656,7 +3636,7 @@
                     {
                         id: "18-6",
                         category: "公式推导",
-                        question: "应付账款控制账户（PLCA）完整公式：<br>Closing TP = Opening TP + <blank>Credit Purchases</blank> + Refunds Received + Interest Charged - <blank>Cash Paid</blank> - Purchase Returns - <blank>Discounts Received</blank> - Contra。",
+                        question: "应付账款控制账户（PLCA）完整公式：<br><blank>Closing TP</blank>（期末应付账款）= <blank>Opening TP</blank>（期初应付账款）+ <blank>Credit Purchases</blank>（赊购）+ <blank>Refunds Received</blank>（收到退款）+ <blank>Interest Charged</blank>（被收利息）- <blank>Cash Paid</blank>（支付现金）- <blank>Purchase Returns</blank>（采购退回）- <blank>Discounts Received</blank>（获得折扣）- <blank>Contra</blank>（对冲）。",
                         explanation: {
                             title: "应付账款T账户公式（完整版）",
                             content: "应付账款变动的所有项目：增加方（贷方）：① Credit purchases（赊购）；② Refunds received from suppliers（收到退款后负债增加）；③ Interest charged by suppliers（供应商加收利息）。减少方（借方）：① Cash paid（付款）；② Purchase returns（采购退回）；③ Discounts received（获得的折扣）；④ Contra（对冲抵消）。Tip: 求总Purchases可以先倒推Credit Purchases，再加Cash Purchases！",
@@ -3666,7 +3646,7 @@
                     {
                         id: "18-7",
                         category: "公式推导",
-                        question: "费用公式（权责发生制）：<br>当期 <blank>Expense</blank> = Cash paid + (Closing accrued expense - Opening accrued expense) - (Closing prepaid expense - Opening prepaid expense)。",
+                        question: "费用公式（权责发生制）：<br>当期 <blank>Expense</blank>（费用）= <blank>Cash paid</blank>（现金支付）+ (<blank>Closing accrued expense</blank>（期末应计费用）- <blank>Opening accrued expense</blank>（期初应计费用）) - (<blank>Closing prepaid expense</blank>（期末预付费用）- <blank>Opening prepaid expense</blank>（期初预付费用）)。",
                         explanation: {
                             title: "费用的权责发生制公式",
                             content: "现金付款不等于当期费用！调整公式：当期费用 = 现金支付 + 应计费用增加 - 预付费用增加。详细说：① 期末多欠了（应计增加）→费用更多；② 期末多预付了（预付增加）→费用更少（未来才用）。另一种写法：Expense = Cash paid + Closing accrual - Opening accrual - Closing prepaid + Opening prepaid。",
@@ -3676,7 +3656,7 @@
                     {
                         id: "18-8",
                         category: "公式推导",
-                        question: "销售成本公式：<blank>COGS</blank> = <blank>Opening inventory</blank>（期初存货）+ Purchases + <blank>Carriage inwards</blank>（进货运费）- Purchase returns - <blank>Closing inventory</blank>（期末存货）。",
+                        question: "销售成本公式：<blank>COGS</blank>（销售成本）= <blank>Opening inventory</blank>（期初存货）+ <blank>Purchases</blank>（采购）+ <blank>Carriage inwards</blank>（进货运费）- <blank>Purchase returns</blank>（采购退回）- <blank>Closing inventory</blank>（期末存货）。",
                         explanation: {
                             title: "销售成本完整公式",
                             content: "这是存货和成本的核心公式：COGS = 可供销售的货物成本 - 期末剩余存货。可供销售 = Opening inventory + Purchases + Carriage inwards - Purchase returns。注意：进货运费(Carriage inwards)计入成本，销货运费(Carriage outwards)是费用！考试经常让你倒推其中一项。",
@@ -3687,7 +3667,7 @@
                     {
                         id: "18-9",
                         category: "存货损失",
-                        question: "存货损失计算三步法：<br>① 用Margin/Markup公式计算<blank>Estimated COGS</blank>（预计销售成本）；<br>② 用存货公式计算<blank>Estimated closing inventory</blank>（火灾前应有存货）；<br>③ 差额 = <blank>Inventory lost</blank>（毁损/被盗存货）= 预计期末存货 - 实际剩余存货。",
+                        question: "存货损失计算三步法：<br>① 用<blank>Margin</blank>（毛利率）/<blank>Markup</blank>（加成率）公式计算<blank>Estimated COGS</blank>（预计销售成本）；<br>② 用存货公式计算<blank>Estimated closing inventory</blank>（火灾前应有存货）；<br>③ 差额 = <blank>Inventory lost</blank>（毁损/被盗存货）= <blank>Estimated closing inventory</blank>（预计期末存货） - <blank>Actual remaining inventory</blank>（实际剩余存货）。",
                         explanation: {
                             title: "存货损失计算步骤",
                             content: "火灾或盗窃导致存货损失的计算方法：① 先用毛利率算出'正常情况下的销售成本'（如Sales×70%如果Margin=30%）；② 再用存货公式算出'如果没损失，期末应该有多少存货'（Opening inv + Purchases - COGS）；③ 最后用'应有存货'减去'实际剩余存货'= 损失金额。注意：实际剩余存货来自火灾后盘点！",
@@ -3697,17 +3677,17 @@
                     {
                         id: "18-10",
                         category: "存货损失",
-                        question: "存货损失的会计处理：<br>• 未投保时：Dr <blank>Expenses (Loss on inventory)</blank> Cr Cost of Sales/Inventory；<br>• 已投保时：Dr <blank>Insurance claim receivable</blank> Cr Cost of Sales；收到赔款时 Dr Bank Cr <blank>Insurance claim</blank>。",
+                        question: "存货损失的会计处理：<br>• 未投保时：Dr <blank>Expenses (Loss on inventory)</blank>（存货损失费用）Cr <blank>Cost of Sales</blank>（销售成本）；<br>• 已投保时：Dr <blank>Insurance claim receivable</blank>（保险索赔应收款）Cr <blank>Cost of Sales</blank>（销售成本）；收到赔款时 Dr <blank>Bank</blank>（银行存款）Cr <blank>Insurance claim</blank>（保险索赔）。",
                         explanation: {
                             title: "存货损失的会计处理",
-                            content: "两种情况：① 未投保（Not insured）：损失自己承担，记为费用。分录：Dr Loss on inventory（费用）, Cr Cost of Sales/Inventory。损失在利润表费用中列示。② 已投保（Insured）：损失可向保险公司索赔。先确认应收：Dr Insurance claim receivable（流动资产）, Cr Cost of Sales。收到赔款时：Dr Bank, Cr Insurance claim receivable。",
+                            content: "两种情况：① 未投保（Not insured）：损失自己承担，记为费用。分录：Dr Loss on inventory（费用）, Cr Cost of Sales。损失在利润表费用中列示。② 已投保（Insured）：损失可向保险公司索赔。先确认应收：Dr Insurance claim receivable（流动资产）, Cr Cost of Sales。收到赔款时：Dr Bank, Cr Insurance claim receivable。",
                             analogy: "手机丢了两种情况：① 没买保险→自己承担损失，记'费用'。② 买了保险→先记'保险公司欠我赔款'（应收），等保险公司打钱过来再销掉应收。"
                         }
                     },
                     {
                         id: "18-11",
                         category: "存货损失",
-                        question: "盘点日与资产负债表日不一致时的调整：<br>从盘点日存货向前调整到报表日：<blank>加回</blank>期间销售成本（已卖出的货）、<blank>加回</blank>期间退货（已退给供应商的货）、<blank>减去</blank>期间采购（新进的货）。",
+                        question: "盘点日调整公式（从盘点日倒推到报表日）：<br><blank>Inventory at SOFP date</blank>（报表日存货）= <blank>Inventory at count date</blank>（盘点日存货）+ <blank>Cost of sales</blank>（期间销售成本）+ <blank>Purchase returns</blank>（期间采购退回）- <blank>Purchases</blank>（期间采购）。",
                         explanation: {
                             title: "盘点日调整（Inventory count adjustment）",
                             content: "实务中存货盘点可能在资产负债表日之后进行（如5月31日报表，6月4日盘点）。需要从盘点日倒推回报表日：① 盘点日存货 - 期间采购（新进的不算31号的）+ 期间销售成本（卖掉的31号还有）+ 期间退货（退给供应商的31号还有）= 报表日存货。口诀：要得到更早的存货，把期间'进来的'减掉，'出去的'加回！",
@@ -3718,7 +3698,7 @@
                     {
                         id: "18-12",
                         category: "利润计算",
-                        question: "用<blank>Net assets</blank>（净资产）变动推算利润：<br>Profit = <blank>Closing Capital</blank> - Opening Capital + <blank>Drawings</blank>（取款）- <blank>Capital introduced</blank>（追加投资）。<br>其中 Capital = Assets - Liabilities。",
+                        question: "用<blank>Net assets</blank>（净资产）变动推算利润：<br><blank>Profit</blank>（利润）= <blank>Closing Capital</blank>（期末资本）- <blank>Opening Capital</blank>（期初资本）+ <blank>Drawings</blank>（取款）- <blank>Capital introduced</blank>（追加投资）。<br>其中 <blank>Capital</blank>（资本）= <blank>Assets</blank>（资产）- <blank>Liabilities</blank>（负债）。",
                         explanation: {
                             title: "净资产法计算利润",
                             content: "当收入费用记录不全时，可以用资产负债表法推算利润：① 先算期末净资产（Closing assets - Closing liabilities）和期初净资产（Opening assets - Opening liabilities）；② 净资产变动 = 利润 - 取款 + 追加投资；③ 移项得：Profit = 期末净资产 - 期初净资产 + Drawings - Capital introduced。这是独资企业（sole trader）不完整记录下倒推利润的核心技巧！",
