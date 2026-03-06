@@ -599,7 +599,8 @@
                     title="第十五章 分类账与对账">Ch15</button><button class="chapter-btn" data-chapter="16"
                     title="第十六章 试算平衡">Ch16</button><button class="chapter-btn" data-chapter="17"
                     title="第十七章 年末调整">Ch17</button><button class="chapter-btn" data-chapter="18"
-                    title="第十八章 不完整记录">Ch18</button></div>
+                    title="第十八章 不完整记录">Ch18</button><button class="chapter-btn" data-chapter="19"
+                    title="第十九章 现金流量表">Ch19</button></div>
         </div>
 
         <!-- 统计信息 -->
@@ -3362,6 +3363,137 @@
                             title: "净资产法计算利润",
                             content: "当收入费用记录不全时，可以用资产负债表法推算利润：① 先算期末净资产（Closing assets - Closing liabilities）和期初净资产（Opening assets - Opening liabilities）；② 净资产变动 = 利润 - 取款 + 追加投资；③ 移项得：Profit = 期末净资产 - 期初净资产 + Drawings - Capital introduced。这是独资企业（sole trader）不完整记录下倒推利润的核心技巧！",
                             analogy: "你年初身家100万，年末身家150万，中间取出20万买车（Drawings），爸妈给了10万（Capital introduced）。你今年赚了多少？150-100+20-10 = 60万利润。净资产变化扣除投入取出后的差额就是利润！"
+                        }
+                    }
+                ]
+            },
+            19: {
+                name: "第十九章 现金流量表",
+                categories: ["定义概念", "间接法", "投资活动", "融资活动", "汇总核对"],
+                cards: [
+                    // ===== 1. 定义概念（课件1.1+1.2） =====
+                    {
+                        id: "19-1",
+                        category: "定义概念",
+                        question: "现金流量表的必要性：<br>① <blank>Easier to understand</blank>（更易于理解）；<br>② <blank>Less susceptible to manipulation</blank>（不易被操纵）；<br>③ <blank>Highlights key flows</blank>（突出关键流量）。",
+                        explanation: {
+                            title: "为什么需要现金流量表？（课件1.1）",
+                            content: "利润表基于权责发生制，容易被操纵（如改变折旧政策、推迟费用确认等）。现金流量表基于实际收付，更难造假，让使用者更容易理解企业真实的现金状况。",
+                            analogy: "利润表像是你的'计划收入'（包含别人还没给你的工资），现金流量表像是你银行卡的实际进出流水——更真实、更难作假。"
+                        }
+                    },
+                    {
+                        id: "19-2",
+                        category: "定义概念",
+                        question: "<blank>Cash</blank>（现金）= <blank>Cash on hand</blank>（手头现金）+ <blank>in the bank</blank>（银行存款）。<br><blank>Cash equivalents</blank>（现金等价物）= <blank>Short-term</blank>（短期的）、<blank>highly liquid</blank>（高流动性）的投资；可<blank>Readily convertible</blank>（随时转换）为<blank>known amounts</blank>（已知金额）的现金；价值变动的<blank>insignificant risk</blank>（风险不重大）。",
+                        explanation: {
+                            title: "Cash与Cash equivalents的定义（课件1.2）",
+                            content: "Cash很简单：手头现金+银行存款。Cash equivalents需满足三个条件：① 短期+高流动性；② 能随时转换为已知金额的现金；③ 价值变动风险极小。例如3个月内到期的国库券。",
+                            analogy: "Cash=你钱包里的钱+银行活期余额。Cash equivalents=你买的3个月到期的余额宝/货币基金，随时可取、金额确定、几乎不亏。"
+                        }
+                    },
+                    {
+                        id: "19-3",
+                        category: "定义概念",
+                        question: "<blank>Cash flows</blank>（现金流量）= <blank>cash and cash equivalents</blank>（现金和现金等价物）的<blank>Inflows</blank>（流入）和<blank>Outflows</blank>（流出）。<br>三大分类：<br>① <blank>Operating activities</blank>（经营活动）= <blank>Principle revenue-providing activities</blank>（主要创收活动），以及其他<blank>not investing or financing</blank>（非投资或融资）的活动；<br>② <blank>Investing activities</blank>（投资活动）= <blank>long-term assets</blank>（长期资产）的<blank>acquisition and disposal</blank>（购置和处置）；<br>③ <blank>Financing activities</blank>（融资活动）= <blank>equity capital</blank>（权益资本）和<blank>borrowings</blank>（借款）的变动。",
+                        explanation: {
+                            title: "Cash flows与三大分类的定义（课件1.2）",
+                            content: "课件定义表完整内容：经营活动=主要创收活动+非投资或融资的活动；投资活动=长期资产的购置和处置；融资活动=权益资本和借款的规模及构成变化。",
+                            analogy: "开奶茶店：经营=卖奶茶收钱、买原料付钱（日常创收）；投资=买冰柜卖旧搅拌机（长期资产买卖）；融资=找人投资、还银行贷款（权益和借款变化）。"
+                        }
+                    },
+                    // ===== 2. 间接法（课件2.2） =====
+                    {
+                        id: "19-4",
+                        category: "间接法",
+                        question: "间接法起点：<blank>Profit before tax</blank>（税前利润）。<br>调整项：<br>+ <blank>Depreciation / Amortization</blank>（折旧/摊销）— <blank>Non-cash expense</blank>（非现金费用）；<br>+ <blank>Interest expense</blank>（利息费用）— 重分类为<blank>operating outflow</blank>（经营活动流出）；<br>+ <blank>Loss on disposal</blank>（处置损失）— 重分类为<blank>investing</blank>（投资活动）；<br>- <blank>Profit on disposal</blank>（处置利润）— 重分类为<blank>investing</blank>（投资活动）；<br>- <blank>Investment income</blank>（投资收益）— 重分类为<blank>investing</blank>（投资活动）。",
+                        explanation: {
+                            title: "间接法调整项（课件2.2表格）",
+                            content: "间接法核心：从税前利润出发调整。① 折旧/摊销是非现金费用→加回；② 利息费用需单独列示实际现金支付→先加回再下面扣实际付的；③ 处置损失/利润不属于经营→分别加回/扣除；④ 投资收益归入投资活动→扣除。",
+                            analogy: "你开店年利润50万，但账上扣了10万折旧（设备旧了但没掏现金给谁→加回），另外利润里有5万是卖旧设备赚的（不是卖货赚的→扣除归投资活动）。经营现金=50+10-5=55万。"
+                        }
+                    },
+                    {
+                        id: "19-5",
+                        category: "间接法",
+                        question: "营运资本调整：<br><blank>inventory</blank>（存货）增加→<blank>outflow</blank>（流出）；减少→<blank>inflow</blank>（流入）；<br><blank>trade receivables</blank>（应收账款）增加→<blank>outflow</blank>（流出）；减少→<blank>inflow</blank>（流入）；<br><blank>trade payables</blank>（应付账款）增加→<blank>inflow</blank>（流入）；减少→<blank>outflow</blank>（流出）。",
+                        explanation: {
+                            title: "营运资本调整方向（课件2.2表格）",
+                            content: "课件表格中的Note列：存货和应收——Increase is outflow, decrease is inflow；应付——Increase is inflow, decrease is outflow。简记：资产与现金反向，负债与现金同向。",
+                            analogy: "存货增加=花钱进了更多货（现金流出→扣）；应收增加=客户欠你更多钱没付（没收到现金→扣）；应付增加=你欠供应商更多没付（省下现金→加）。"
+                        }
+                    },
+                    {
+                        id: "19-6",
+                        category: "间接法",
+                        question: "<blank>Interest paid</blank>（已付利息）= <blank>Opening Interest Payable</blank>（期初应付利息）+ <blank>Interest Expense</blank>（利息费用）- <blank>Closing Interest Payable</blank>（期末应付利息）。<br><blank>Income tax paid</blank>（已付所得税）= <blank>Opening Tax Payable</blank>（期初应付税款）+ <blank>Tax Expense</blank>（所得税费用）- <blank>Closing Tax Payable</blank>（期末应付税款）。",
+                        explanation: {
+                            title: "Interest paid与Income tax paid公式（课件2.1表格）",
+                            content: "课件直接法表格中给出的两个公式。逻辑相同：期初未付+本期新增-期末未付=本期实际付出。间接法最后也用这两个公式来算实际现金支出。",
+                            analogy: "Renada案例W2：期初Tax Payable $120,000 + Tax Expense $40,000 - 期末Tax Payable $40,000 = Tax paid $120,000。"
+                        }
+                    },
+                    // ===== 3. 投资活动（课件第3节） =====
+                    {
+                        id: "19-7",
+                        category: "投资活动",
+                        question: "投资活动项目：<br>购置额倒推公式：<blank>Purchase of PP&E</blank>（购置PPE）= <blank>Closing NBV</blank>（期末净值）+ <blank>NBV of Disposals</blank>（处置资产净值）+ <blank>Depreciation</blank>（折旧）- <blank>Opening NBV</blank>（期初净值）- <blank>Revaluation Upwards</blank>（向上重估）。<br>其他投资活动流入：<br>+ <blank>Proceeds from sale of PP&E</blank>（出售PPE所得）；<br>+ <blank>Interest received</blank>（收到的利息）；<br>+ <blank>Dividend received</blank>（收到的股利）。",
+                        explanation: {
+                            title: "投资活动各项目及PPE购置公式（课件第3节）",
+                            content: "PPE购置公式是投资活动核心（Renada案例W3）：把NBV的T型账做平衡就能倒推购置额。另外Proceeds（出售所得）、Interest received、Dividend received都是投资活动现金流入。",
+                            analogy: "Renada案例W3：期末NBV $1,800,000 + 处置NBV $80,000 + 折旧 $120,000 - 期初NBV $1,000,000 - 重估 $300,000 = 购置额 $700,000。"
+                        }
+                    },
+                    {
+                        id: "19-8",
+                        category: "投资活动",
+                        question: "处置非流动资产时：投资活动列示的是<blank>Proceeds</blank>（所得款项），而非损益。<br>处置产生的<blank>profit</blank>（利润）在间接法中从税前利润中<blank>deducted</blank>（扣除）；<br>处置产生的<blank>loss</blank>（损失）在间接法中<blank>added back</blank>（加回）到税前利润。",
+                        explanation: {
+                            title: "处置NCA的现金流处理（课件Q2/Q3考点）",
+                            content: "课件Q2答案（选项A）和Q3选项(4)解析：投资活动中列Proceeds（全部所得款），处置利润不单独出现在投资活动中。处置损益在间接法中作为经营活动调整项处理。",
+                            analogy: "Renada案例W1：设备NBV $80,000，售价 $30,000，损失 $50,000。投资活动列Proceeds $30,000（流入），间接法加回Loss $50,000。"
+                        }
+                    },
+                    // ===== 4. 融资活动（课件第4节） =====
+                    {
+                        id: "19-9",
+                        category: "融资活动",
+                        question: "融资活动项目：<br>+ <blank>Proceeds from issuance of shares</blank>（发行股票所得）= 期末（<blank>Share Capital</blank>（股本）+ <blank>Share Premium</blank>（溢价）） - 期初（股本+溢价）；<br>+ <blank>Proceeds from long-term borrowings</blank>（长期借款所得）；<br>- <blank>Repayment of long-term borrowings</blank>（偿还长期借款）；<br>- <blank>Dividend paid</blank>（已付股利）= <blank>Opening Retained Earnings</blank>（期初留存收益）+ <blank>Net Profit</blank>（净利润）- <blank>Closing Retained Earnings</blank>（期末留存收益）。",
+                        explanation: {
+                            title: "融资活动各项目及公式（课件第4节表格）",
+                            content: "发行股票所得=（期末股本+溢价）-（期初股本+溢价），注意要扣除Bonus issue的影响。已付股利用留存收益倒推：期初+净利润-期末=已付。利息支付通常归入经营活动。",
+                            analogy: "Renada案例W4：股本增加 $100,000 + 溢价增加 $400,000 = 发行所得 $500,000。"
+                        }
+                    },
+                    {
+                        id: "19-10",
+                        category: "融资活动",
+                        question: "哪些不出现在现金流量表中：<br><blank>Bonus issue</blank>（红股发行）：<blank>non-cash</blank>（非现金）交易，不出现；<br><blank>Revaluation surplus</blank>（重估盈余）：<blank>non-cash</blank>（非现金）交易，不出现；<br><blank>Proposed dividend</blank>（拟议股利）：仅提议尚未支付，<blank>not a cash flow</blank>（不代表现金流），不出现。<br>而<blank>Rights issue</blank>（配股发行）带来现金流入，属于<blank>financing activities</blank>（融资活动）。",
+                        explanation: {
+                            title: "非现金项目判断（课件Q3、Q6考点）",
+                            content: "课件Q3解析：(1)错误-直接法间接法金额相同；(2)错误-Rights issues属于融资活动流入；(3)正确-Revaluation surplus不出现；(4)错误-投资活动列Proceeds不列Profit。Q6解析：重估盈余和拟议股利不出现，发行所得和收到的股利出现。",
+                            analogy: "红股=留存收益转成股本，钱在公司内部转移，没有现金进来。重估=把房子估价调高了但没卖。拟议股利=董事会提议还没付钱。"
+                        }
+                    },
+                    // ===== 5. 汇总核对（课件第5节） =====
+                    {
+                        id: "19-11",
+                        category: "汇总核对",
+                        question: "汇总格式：<br><blank>Net change in cash and cash equivalents</blank>（现金净变动）= <blank>A + B + C</blank>（三大活动之和）；<br>+ <blank>Cash and cash equivalents at beginning of year</blank>（年初现金）= 来自<blank>SOFP</blank>（财务状况表）的期初余额；<br>= <blank>Cash and cash equivalents at end of year</blank>（年末现金）→ 必须与<blank>SOFP</blank>（财务状况表）期末余额一致。",
+                        explanation: {
+                            title: "汇总格式与现金核对（课件第5节+Renada核心总结）",
+                            content: "三大活动净现金流A+B+C=现金净变动。加上期初现金=期末现金。期末现金必须等于SOFP上的现金余额。Renada案例验证：$140,000(期初) - $400,000(净减少) = ($260,000)，与期末银行透支(Bank overdraft)相符。",
+                            analogy: "Renada：经营($780,000) + 投资($670,000) + 融资$500,000 = 净减少($400,000)。$140,000 - $400,000 = ($260,000) = 期末银行透支，核对通过！"
+                        }
+                    },
+                    {
+                        id: "19-12",
+                        category: "汇总核对",
+                        question: "<blank>Direct method</blank>（直接法）和<blank>Indirect method</blank>（间接法）计算出的经营活动现金流金额<blank>same</blank>（相同）。两种方法仅影响<blank>operating activities</blank>（经营活动）部分的列报方式，<blank>investing</blank>（投资）和<blank>financing</blank>（融资）部分完全相同。",
+                        explanation: {
+                            title: "直接法vs间接法（课件Q3选项1考点）",
+                            content: "课件Q3选项(1)解析明确指出：直接法和间接法最终计算出的经营活动现金净流量金额相同。直接法直接列示Cash receipts from customers - Cash paid to suppliers等；间接法从Profit before tax调整。投资和融资活动部分两种方法完全一样。",
+                            analogy: "问你这个月花了多少钱：直接法=翻看每笔支出加总；间接法=工资收入减去余额变化再调整。结果一样，只是展示方式不同。"
                         }
                     }
                 ]
