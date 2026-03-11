@@ -3406,31 +3406,20 @@
                     {
                         id: "19-4",
                         category: "间接法",
-                        question: "间接法起点：<blank>Profit before tax</blank>（税前利润）。<br>调整项：<br>+ <blank>Depreciation / Amortization</blank>（折旧/摊销）— <blank>Non-cash expense</blank>（非现金费用）；<br>+ <blank>Interest expense</blank>（利息费用）— 重分类为<blank>operating outflow</blank>（经营活动流出）；<br>+ <blank>Loss on disposal</blank>（处置损失）— 重分类为<blank>investing</blank>（投资活动）；<br>- <blank>Profit on disposal</blank>（处置利润）— 重分类为<blank>investing</blank>（投资活动）；<br>- <blank>Investment income</blank>（投资收益）— 重分类为<blank>investing</blank>（投资活动）。",
+                        question: "间接法（起点 <blank>Profit before tax</blank>（税前利润））调整规则：<br><br>1. 调整利润表项目：<br>➕ 加上：<blank>Depreciation</blank>（折旧）、<blank>Loss on disposal</blank>（处置损失）、<blank>Interest expense</blank>（利息费用）<br>➖ 减去：<blank>Profit on disposal</blank>（处置利润）、<blank>Investment income</blank>（投资收益）<br><br>2. 调整资产负债表项目：<br>• <blank>Receivables</blank>（应收）、<blank>Inventory</blank>（存货）：增加→<blank>减去</blank>，减少→<blank>加上</blank>；<br>• <blank>Payables</blank>（应付）：增加→<blank>加上</blank>，减少→<blank>减去</blank>。",
                         explanation: {
-                            title: "间接法调整项（课件2.2表格）",
-                            content: "间接法核心：从税前利润出发调整。① 折旧/摊销是非现金费用→加回；② 利息费用需单独列示实际现金支付→先加回再下面扣实际付的；③ 处置损失/利润不属于经营→分别加回/扣除；④ 投资收益归入投资活动→扣除。",
-                            analogy: "你开店年利润50万，但账上扣了10万折旧（设备旧了但没掏现金给谁→加回），另外利润里有5万是卖旧设备赚的（不是卖货赚的→扣除归投资活动）。经营现金=50+10-5=55万。"
-                        }
-                    },
-                    {
-                        id: "19-5",
-                        category: "间接法",
-                        question: "营运资本调整：<br><blank>inventory</blank>（存货）增加→<blank>outflow</blank>（流出）；减少→<blank>inflow</blank>（流入）；<br><blank>trade receivables</blank>（应收账款）增加→<blank>outflow</blank>（流出）；减少→<blank>inflow</blank>（流入）；<br><blank>trade payables</blank>（应付账款）增加→<blank>inflow</blank>（流入）；减少→<blank>outflow</blank>（流出）。",
-                        explanation: {
-                            title: "营运资本调整方向（课件2.2表格）",
-                            content: "课件表格中的Note列：存货和应收——Increase is outflow, decrease is inflow；应付——Increase is inflow, decrease is outflow。简记：资产与现金反向，负债与现金同向。",
-                            analogy: "存货增加=花钱进了更多货（现金流出→扣）；应收增加=客户欠你更多钱没付（没收到现金→扣）；应付增加=你欠供应商更多没付（省下现金→加）。"
+                            title: "间接法调整规则",
+                            content: "在此直接按规则调整即可：<br>① 利润表项目：将折旧、处置损失、利息费用作【加上】处理；将处置利润、投资收益作【减去】处理。<br>② 资产负债表项目：资产类（应收、存货）变动与调整方向【相反】（增加就减，减少就加）；负债类（应付）变动与调整方向【相同】（增加就加，减少就减）。"
                         }
                     },
                     {
                         id: "19-6",
                         category: "间接法",
-                        question: "<blank>Interest paid</blank>（已付利息）= <blank>Opening Interest Payable</blank>（期初应付利息）+ <blank>Interest Expense</blank>（利息费用）- <blank>Closing Interest Payable</blank>（期末应付利息）。<br><blank>Income tax paid</blank>（已付所得税）= <blank>Opening Tax Payable</blank>（期初应付税款）+ <blank>Tax Expense</blank>（所得税费用）- <blank>Closing Tax Payable</blank>（期末应付税款）。",
+                        question: "经营活动流出（税）：<br><blank>Income tax paid</blank>（已付所得税）= <blank>Opening Tax Payable</blank>（期初应付）+ <blank>Tax Expense</blank>（当年费用）- <blank>Closing Tax Payable</blank>（期末应付）。",
                         explanation: {
-                            title: "Interest paid与Income tax paid公式（课件2.1表格）",
-                            content: "课件直接法表格中给出的两个公式。逻辑相同：期初未付+本期新增-期末未付=本期实际付出。间接法最后也用这两个公式来算实际现金支出。",
-                            analogy: "Renada案例W2：期初Tax Payable $120,000 + Tax Expense $40,000 - 期末Tax Payable $40,000 = Tax paid $120,000。"
+                            title: "已付税费计算公式",
+                            content: "计算逻辑：期初欠的 + 今年新欠的 - 期末还欠的 = 今年实际付出去的。<br>⚠️ **考点**：根据大纲，实际支付的**税金** (Income tax paid) 必须列示在**经营活动** (Operating activities) 的流出。",
+                            analogy: "算税就像算水电费：年初欠12万，今年新出了4万账单，年底一看还欠4万。说明今年实际交了12万现金！"
                         }
                     },
                     // ===== 3. 投资活动（课件第3节） =====
@@ -3444,24 +3433,15 @@
                             analogy: "Renada案例W3：期末NBV $1,800,000 + 处置NBV $80,000 + 折旧 $120,000 - 期初NBV $1,000,000 - 重估 $300,000 = 购置额 $700,000。"
                         }
                     },
-                    {
-                        id: "19-8",
-                        category: "投资活动",
-                        question: "处置非流动资产时：投资活动列示的是<blank>Proceeds</blank>（所得款项），而非损益。<br>处置产生的<blank>profit</blank>（利润）在间接法中从税前利润中<blank>deducted</blank>（扣除）；<br>处置产生的<blank>loss</blank>（损失）在间接法中<blank>added back</blank>（加回）到税前利润。",
-                        explanation: {
-                            title: "处置NCA的现金流处理（课件Q2/Q3考点）",
-                            content: "课件Q2答案（选项A）和Q3选项(4)解析：投资活动中列Proceeds（全部所得款），处置利润不单独出现在投资活动中。处置损益在间接法中作为经营活动调整项处理。",
-                            analogy: "Renada案例W1：设备NBV $80,000，售价 $30,000，损失 $50,000。投资活动列Proceeds $30,000（流入），间接法加回Loss $50,000。"
-                        }
-                    },
+
                     // ===== 4. 融资活动（课件第4节） =====
                     {
                         id: "19-9",
                         category: "融资活动",
-                        question: "融资活动项目：<br>+ <blank>Proceeds from issuance of shares</blank>（发行股票所得）= 期末（<blank>Share Capital</blank>（股本）+ <blank>Share Premium</blank>（溢价）） - 期初（股本+溢价）；<br>+ <blank>Proceeds from long-term borrowings</blank>（长期借款所得）；<br>- <blank>Repayment of long-term borrowings</blank>（偿还长期借款）；<br>- <blank>Dividend paid</blank>（已付股利）= <blank>Opening Retained Earnings</blank>（期初留存收益）+ <blank>Net Profit</blank>（净利润）- <blank>Closing Retained Earnings</blank>（期末留存收益）。",
+                        question: "融资活动项目：<br>+ <blank>Proceeds from issuance of shares</blank>（发行股票所得）= 期末（<blank>Share Capital</blank>（股本）+ <blank>Share Premium</blank>（溢价）） - 期初（股本+溢价）；<br>+ <blank>Proceeds from long-term borrowings</blank>（长期借款所得）；<br>- <blank>Repayment of long-term borrowings</blank>（偿还长期借款）；<br>- <blank>Interest paid</blank>（已付利息）= <blank>Opening Interest Payable</blank>（期初应付）+ <blank>Interest Expense</blank>（当年费用）- <blank>Closing Interest Payable</blank>（期末应付）；<br>- <blank>Dividend paid</blank>（已付股利）= <blank>Opening Retained Earnings</blank>（期初留存收益）+ <blank>Net Profit</blank>（净利润）- <blank>Closing Retained Earnings</blank>（期末留存收益）。",
                         explanation: {
                             title: "融资活动各项目及公式（课件第4节表格）",
-                            content: "发行股票所得=（期末股本+溢价）-（期初股本+溢价），注意要扣除Bonus issue的影响。已付股利用留存收益倒推：期初+净利润-期末=已付。利息支付通常归入经营活动。",
+                            content: "发行股票所得=（期末股本+溢价）-（期初股本+溢价），注意要扣除Bonus issue的影响。根据最新原则，利息支付（Interest paid）属于融资活动的现金流出，计算法则依然是：期初负债+本期费用-期末负债=本期支付。已付股利用留存收益倒推：期初+净利润-期末=已付。",
                             analogy: "Renada案例W4：股本增加 $100,000 + 溢价增加 $400,000 = 发行所得 $500,000。"
                         }
                     },
