@@ -3406,7 +3406,7 @@
                     {
                         id: "19-4",
                         category: "间接法",
-                        question: "间接法（起点 <blank>Profit before tax</blank>（税前利润））调整规则：<br><br>1. 调整利润表项目：<br>➕ 加上：<blank>Depreciation</blank>（折旧）、<blank>Loss on disposal</blank>（处置损失）、<blank>Interest expense</blank>（利息费用）<br>➖ 减去：<blank>Profit on disposal</blank>（处置利润）、<blank>Investment income</blank>（投资收益）<br><br>2. 调整资产负债表项目：<br>• <blank>Receivables</blank>（应收）、<blank>Inventory</blank>（存货）：增加→<blank>减去</blank>，减少→<blank>加上</blank>；<br>• <blank>Payables</blank>（应付）：增加→<blank>加上</blank>，减少→<blank>减去</blank>。",
+                        question: "间接法（起点 <blank>Profit before tax</blank>（税前利润））调整规则：<br><br>1. 调整利润表项目：<br>➕ 加上：<blank>Depreciation</blank>（折旧）、<blank>Loss on disposal</blank>（处置损失）、<blank>Interest expense</blank>（利息费用）<br>➖ 减去：<blank>Profit on disposal</blank>（处置利润）、<blank>Investment income</blank>（投资收益）<br><br>2. 调整资产负债表项目：<br>• <blank>Receivables</blank>（应收）、<blank>Inventory</blank>（存货）：增加→<blank>deduct</blank>（减去），减少→<blank>add</blank>（加上）；<br>• <blank>Payables</blank>（应付）：增加→<blank>add</blank>（加上），减少→<blank>deduct</blank>（减去）。",
                         explanation: {
                             title: "间接法调整规则",
                             content: "在此直接按规则调整即可：<br>① 利润表项目：将折旧、处置损失、利息费用作【加上】处理；将处置利润、投资收益作【减去】处理。<br>② 资产负债表项目：资产类（应收、存货）变动与调整方向【相反】（增加就减，减少就加）；负债类（应付）变动与调整方向【相同】（增加就加，减少就减）。"
@@ -3474,6 +3474,360 @@
                             title: "直接法vs间接法（课件Q3选项1考点）",
                             content: "课件Q3选项(1)解析明确指出：直接法和间接法最终计算出的经营活动现金净流量金额相同。直接法直接列示Cash receipts from customers - Cash paid to suppliers等；间接法从Profit before tax调整。投资和融资活动部分两种方法完全一样。",
                             analogy: "问你这个月花了多少钱：直接法=翻看每笔支出加总；间接法=工资收入减去余额变化再调整。结果一样，只是展示方式不同。"
+                        }
+                    }
+                ]
+            },
+            // ==================== 第二十章：报告期后事项 ====================
+            20: {
+                name: "第二十章 报告期后事项",
+                categories: ["定义与概念", "调整事项", "非调整事项", "判断原则"],
+                cards: [
+                    // ===== 1. 定义与概念 =====
+                    {
+                        id: "20-1",
+                        category: "定义与概念",
+                        question: "报告期后事项是指发生在 <blank>SOFP date</blank>（财务状况表日）与财务报表 <blank>authorised for issue</blank>（被批准报出日）之间的事项，可以是 <blank>favourable</blank>（有利的）也可以是 <blank>unfavourable</blank>（不利的）。",
+                        explanation: {
+                            title: "报告期后事项的时间范围",
+                            content: "它涵盖了从年底（Year End）一直到董事会批准财务报表发布的这段时间（不是发出日 Issue Date）。在这个时间窗内发生的好事或坏事，都属于报告期后事项。",
+                            analogy: "就像写期末总结：12月31日是总结截止期，但你2月才把总结交给老板批准。这中间1月份发生的事，要不要写进总结里？这就是IAS 10要管的事。"
+                        }
+                    },
+                    {
+                        id: "20-2",
+                        category: "定义与概念",
+                        question: "报告期后事项分为两种类型：<blank>adjusting events</blank>（调整事项）为财务状况表日<blank>existed at SOFP date</blank>（已存在的状况）提供进一步证据；<blank>non-adjusting events</blank>（非调整事项）表明财务状况表日 <blank>arose after SOFP date</blank>（之后才发生的状况）。",
+                        explanation: {
+                            title: "两种事项的核心区别",
+                            content: "如果该事件为年末（SOFP date）已存在的状况提供了进一步的证据，就是调整事项；如果该事件表明的是年末之后才发生的全新状况，就是非调整事项。",
+                            analogy: "年底生了病，1月确诊了（调整事项：根源在年底已存在）。年底好好的，1月份出门摔了一跤（非调整事项：根源在1月份才发生）。"
+                        }
+                    },
+                    // ===== 2. 调整事项 =====
+                    {
+                        id: "20-4",
+                        category: "调整事项",
+                        question: "常考的调整事项例子包括：<br>① <blank>Customer bankruptcy</blank>（客户破产），证实了 <blank>uncollectable receivable at year end</blank>（年末应收账款无法收回）；<br>② <blank>Sale of inventory</blank>（期后存货售价）<blank>less than year-end carrying value</blank>（低于年末账面价值）；<br>③ 获得了表明某项 <blank>asset impairment</blank>（资产减值）<blank>existing at year-end</blank>（在年末已存在）的证据；<br>④ 发现 <blank>fraud or errors</blank>（证明舞弊或错误），表明财务报表 <blank>incorrect</blank>（不正确）；<br>⑤ <blank>Settlement of a court case</blank>（期后未决诉讼结案），且该诉讼 <blank>existed at SOFP date</blank>（在资产负债表日已存在）；<br>⚠️特殊点：表明 <blank>going concern assumption not appropriate</blank>（持续经营假设不再适当）的事件，全部按调整事项处理。",
+                        explanation: {
+                            title: "常考的调整事项",
+                            content: "这些例子的共同点是：'根因'在年末已经存在。客户其实早就没钱了（坏账已发生）；存货其实年底就不值钱了（NRV已下降）；错误在去年就做成了（以前的错）；诉讼在年底就打着了。<br>特殊规定：如果是持续经营假设被打破，即便是年末之后才发生的全新情况（例如1月份厂房全被烧毁导致破产），也必须按调整事项处理，推翻整个报表基础！",
+                            analogy: "这就像树根早就烂了或者种子早种下了（年底已存在状况）。我们要做的是调整去年的账本去反映出这个已经发生的“因”。"
+                        }
+                    },
+                    // ===== 3. 非调整事项 =====
+                    {
+                        id: "20-5",
+                        category: "非调整事项",
+                        question: "非调整事项如果足够 <blank>material</blank>（重大），需在 <blank>notes</blank>（附注）中披露其<blank>nature</blank>（性质）及<blank>financial impact</blank>（财务影响）的估计或无法估计的声明。",
+                        explanation: {
+                            title: "非调整事项的披露要求",
+                            content: "由于非调整事项反映的是下一年度的新情况，不能去修改今年的报表（不改数字）。但是，如果这件事情非常重大，不告诉股东会影响他们的决策，那么必须在附注中披露。",
+                            analogy: "去年考了100分（财报很好）。1月1日突然生病住院了（非调整事项）。你不能把去年的成绩单改成不及格（不调整数字），但你可以给老师写张条子说明你现在住院了（在附注里说明）。"
+                        }
+                    }
+                ]
+            },
+            // ==================== 第二十一章：合并报表导论 ====================
+            21: {
+                name: "第二十一章 合并报表导论",
+                categories: ["基本术语", "合并类型", "控制权判断", "联营企业会计处理"],
+                cards: [
+                    // ===== 1. 基本术语 =====
+                    {
+                        id: "21-1",
+                        category: "基本术语",
+                        question: "<blank>Parent</blank>（母公司）是一个 <blank>controls</blank>（控制，而非仅仅施加重大影响）一个或多个其他实体的实体。<br><blank>Subsidiary</blank>（子公司）是被另一实体（母公司） <blank>controlled</blank>（被控制）的实体。<br><blank>Group</blank>（集团）是母公司及其 <blank>all</blank>（所有的，即便是亏损或在海外的也不可排除）子公司。<br><blank>NCI</blank>（非控制性权益）是子公司中 <blank>not attributable</blank>（不归属，而是属于少数股东）于母公司的权益。",
+                        explanation: {
+                            title: "集团与关键角色定义",
+                            content: "Group（集团）= 母公司 + 它所有的子公司（all subsidiaries）。NCI（Non-Controlling Interest，以前叫少数股东权益）指的是子公司里除了母公司之外的其他人占的股份。",
+                            analogy: "公司A买下公司B 80%的股份。A是Parent，B是Subsidiary，A+B是Group。剩下那20%在别人手里的股份，就是NCI。"
+                        }
+                    },
+                    // ===== 2. 合并类型与控制权判断 =====
+                    {
+                        id: "21-2",
+                        category: "控制权判断",
+                        question: "判断控制权（Control）：通常拥有 <blank>>50%</blank>（必须大于，不能只写等于）的 <blank>voting power</blank>（投票权，请注意无投票权的优先股不算！）。特殊情况（即使≤50%）：<br>通过 <blank>agreement</blank>（协议）拥有超过 50% 表决权；<br>有权 <blank>govern</blank>（主导 / 决定，不仅仅是 participate 参与）财务和经营政策；<br>有权 <blank>appoint or remove</blank>（任免）董事会的多数成员；<br>有权在董事会会议上投 <blank>majority votes</blank>（多数票）。",
+                        explanation: {
+                            title: "特殊情况下的控制权判断",
+                            content: "即使持有≤50%投票权，只要符合上述条件之一（比如签了协议能主导所有经营政策，或者能决定董事会多数席位），依然拥有控制权，对方算是你的子公司。",
+                            analogy: "虽然你只出了一小部分钱（股份少），但按照合同，公司大小事都是你拍板（有票决权），那这公司实质上还是归你管。"
+                        }
+                    },
+                    {
+                        id: "21-3",
+                        category: "控制权判断",
+                        question: "拥有控制权的子公司，在合并处理上采用 <blank>Full Consolidation</blank>（全面合并），将子公司的所有资产、负债、收入、费用都 <blank>100%</blank>（全部加入，绝不可按持股比例打折扣）加入合并报表，然后扣除 <blank>NCI</blank>（非控制性权益）。",
+                        explanation: {
+                            title: "子公司的全面合并",
+                            content: "全面合并就是'我的就是我的，你的也是我的'，先把子公司100%的资产负债都加进来，然后在NCI行里面把不属于自己的那一小块单列出来。",
+                            analogy: "老爸把分店的所有流水100%记在账上，最后再把分给小股东的那份利润扣掉。"
+                        }
+                    },
+                    // ===== 3. 联营企业会计处理 =====
+                    {
+                        id: "21-4",
+                        category: "联营企业会计处理",
+                        question: "判断重大影响（Significant Influence）：通常持有 <blank>≥20%</blank>（通常 20%–50%）的 <blank>voting power</blank>（投票权）。特殊情况（不足20%）：<br>在董事会有 <blank>representation</blank>（代表权，但未达到控制多数席位）；<br><blank>participation</blank>（参与，但没有权力 govern 主导）决策过程；<br>存在 <blank>material transactions</blank>（重大的，而非日常的小额）交易；<br>互换 <blank>management personnel</blank>（管理人员）；<br>提供 <blank>essential technical information</blank>（关键技术信息）。",
+                        explanation: {
+                            title: "重大影响的判断标识",
+                            content: "20%不是绝对死线。如果你只有15%的股份，但每次开会都在主席台上而且能干涉决策通道，那毫无疑问你对这家公司有重大影响，它也是你的 Associate（联营企业）。",
+                            analogy: "股份少没关系，只要能在会议室里说上话做决定，就说明你有重大影响力。"
+                        }
+                    },
+                    {
+                        id: "21-5",
+                        category: "联营企业会计处理",
+                        question: "如果投资者有其它子公司（需编制合并报表），联营企业的投资采用 <blank>Equity Method</blank>（权益法，即 One-line consolidation 单行合并，绝不可逐项 100% 加总对方的资产和收入）：<br>资产负债表中仅列示 <blank>Investment in Associate</blank>（= <blank>Cost</blank> + <blank>Share of post-acq. profit</blank> - <blank>Dividend received</blank>）；<br>利润表中仅一项 <blank>Share of profit/loss of associate</blank>（应占利润份额）。",
+                        explanation: {
+                            title: "集团报表中的权益法 (Equity Method)",
+                            content: "权益法的核心是'按比例认领'：在利润表加一行认领利润，资产负债表中长期投资账户也会增加。但如果你给我发了现金股利，那我的投资账户要扣掉这笔钱（因为利润已经变成现金到我兜里了）。",
+                            analogy: "合伙做生意赚了钱，你的小金库记账（投资账户）就变多了；但如果直接分钱拿回家了，小金库的本金就要把这部分减掉。"
+                        }
+                    },
+                    {
+                        id: "21-6",
+                        category: "联营企业会计处理",
+                        question: "如果投资者无子公司（只编个别报表），那么对联营企业只能按照 <blank>Trade Investment</blank>（交易性投资）处理：<br>资产负债表按 <blank>Cost</blank>（初始成本）列示不变；<br>利润表中绝不确认对方的利润份额，只会确认实际收到的 <blank>Dividend Income</blank>（股利收入）。",
+                        explanation: {
+                            title: "个别报表中的联营企业投资",
+                            content: "如果在个别报表中，不管具有多大影响，只能按照原始买价（Cost）记长期投资，平时只管收分红（Dividend Income），不能用权益法加对方的利润！",
+                            analogy: "因为你是单身（没有子公司），不用过大家庭（集团）的日子，所以对别人家的事只管收点分红，不帮人家记账。"
+                        }
+                    }
+                ]
+            },
+            // ==================== 第二十二章：合并财务报表 ====================
+            22: {
+                name: "第二十二章 合并财务报表",
+                categories: ["合并基本原则", "商誉计算", "合并报表编制", "内部交易"],
+                cards: [
+                    // ===== 22-1. 合并基本原则 =====
+                    {
+                        id: "22-1",
+                        category: "合并基本原则",
+                        question: "合并报表将集团视为一个 <blank>single economic entity</blank>（单一经济实体）。三大核心原则：<br>① <blank>Full Aggregation</blank>（全面加总）：将P和S的同类项目 <blank>line-by-line</blank>（逐行加总，而非只加一行汇总数）；<br>② <blank>Eliminate Intra-group</blank>（抵销内部交易）：集团内交易必须 <blank>fully eliminated</blank>（完全抵销，绝不可只抵销部分）；<br>③ <blank>Show NCI</blank>（反映非控制性权益）：子公司 <blank>100%</blank>（全部，不是只按P%）的资产和负债都纳入合并，不属于母公司的部分列示为NCI。",
+                        explanation: {
+                            title: "合并的三把钥匙",
+                            content: "合并报表的逻辑就三步：先把两家公司的账全部加起来，再把内部'左手倒右手'的假交易全部删掉，最后把不属于母公司的那份儿单独列出来（NCI）。",
+                            analogy: "老爸有间旗舰店，儿子开了间分店。做集团账时：① 两家店的流水全部加起来（全面加总）；② 老爸卖货给儿子的那笔'内部流水'不算（抵销内部交易）；③ 儿子店里有个小股东出了20%的钱，他的份额要单独标出来（NCI）。"
+                        }
+                    },
+                    // ===== 22-2. 商誉公式 + 后续处理 =====
+                    {
+                        id: "22-2",
+                        category: "商誉计算",
+                        question: "Goodwill（商誉）是母公司为获得控制权所支付的溢价，即对价超过被收购方可辨认净资产公允价值的部分。<br>公式：<blank>Goodwill</blank>（商誉） = (<blank>Cost of Investment</blank>（投资成本/对价） + <blank>NCI value @ DOA</blank>（收购日NCI公允价值）) − <blank>Net Assets FV @ DOA</blank>（收购日子公司净资产公允价值）。<br>Goodwill 是一项 <blank>asset</blank>（资产，不是费用！），列示在合并SOFP的 <blank>Non-Current Assets</blank>（非流动资产）中。<br>Goodwill <blank>not amortised</blank>（不摊销，考官最爱设此陷阱！），但每年需进行 <blank>impairment review</blank>（减值测试）。<br>如有减值：CSOFP上的商誉 = <blank>Goodwill at acquisition</blank>（收购时商誉）− <blank>accumulated impairment</blank>（累计减值损失）。",
+                        explanation: {
+                            title: "商誉 = 花了多少钱 − 实际值多少钱（且只减值不摊销）",
+                            content: "商誉代表品牌价值、客户关系、声誉等'看不见摸不着'的东西。考官最喜欢的陷阱是说'Goodwill应在10年内摊销'——这是错的！根据IFRS 3，商誉不摊销，只做年度减值测试。减值了就减掉，而且不可逆。",
+                            analogy: "你花200万买下一家奶茶店，设备存货值150万，多付的50万就是商誉（品牌名气+回头客）。这50万年年体检（减值测试），品牌没塌就一直在账上；如果品牌塌房了就减值，但不会像折旧那样每年'磨损'一点。"
+                        }
+                    },
+                    // ===== 22-3. 商誉三大组成部分考法一览（对应PPT §2.5 汇总表） =====
+                    {
+                        id: "22-3",
+                        category: "商誉计算",
+                        question: "【商誉三大组成部分考法一览】<br><br>▶ Investment Cost（对价）四种形式：<br>① Cash（现金）：直接给金额，直接用；<br>② Other assets（其他资产）：用收购日 <blank>FV</blank>（公允价值，不是 carrying amount 账面价值！）；<br>③ Share exchange（换股）：<blank>P shares issued</blank>（P发行股数）× <blank>P's market price @ DOA</blank>（P的收购日市价，⚠️ 用市价不是面值！用P的价格不是S的！）；<br>④ Mixed（混合）：各部分分别算后求和。<br>⚠️ <blank>Skilled labour</blank>（劳动力）不可作为对价。<br><br>▶ NCI @ DOA 两种给法：<br>① 直接告诉你公允价值；<br>② 自己算：<blank>NCI shares</blank>（NCI股数）× <blank>S's share price @ DOA</blank>（S每股市价，⚠️ 同一股价可能同时用于算Cost和NCI）。<br><br>▶ S Net Assets @ DOA 三种考法：<br>① 直接法：<blank>SC</blank>（股本） + <blank>RE</blank>（留存收益）；<br>② 含FV调整：SC + RE + <blank>FV − CV</blank>（公允价值 − 账面价值差额）；<br>③ 年中收购：RE@DOA = <blank>RE @ prior year-end</blank>（上年末留存收益） + <blank>Annual profit</blank>（全年利润） × <blank>pre-acq months / 12</blank>（收购前月份/12）。",
+                        explanation: {
+                            title: "商誉公式的三个'坑位'——每个都有多种考法",
+                            content: "商誉公式有三个组成项(Investment Cost / NCI / Net Assets)，每一项都有多种计算方式。考官可以单独考也可以组合考（比如：换股对价 + 用股价算NCI + FV调整 + 年中收购全叠在一起）。关键是把每一项分别算清楚，然后代入公式。",
+                            analogy: "做一道菜需要三样食材。每样食材可能要从不同的地方买（现金/换股/混合；直接给/算出来；直接法/有调整/年中切割）。你先把每样食材准备好，最后一锅烩就行了。"
+                        }
+                    },
+                    // ===== 22-4. FV Adjustment + Mid-year 特殊处理 =====
+                    {
+                        id: "22-4",
+                        category: "商誉计算",
+                        question: "⚠️ FV Adjustment（公允价值调整）有双重影响：<br>① 增大了 S 的净资产 → <blank>reduces Goodwill</blank>（商誉减少）；<br>② 合并 SOFP 中 S 的非流动资产要按 <blank>fair value</blank>（公允价值，而非账面价值）列示。<br><br>⚠️ Mid-year Acquisition（年中收购）利润切分：<br>假设利润 <blank>accrues evenly</blank>（均匀发生），必须 <blank>time-apportioned</blank>（时间分摊）。<br><blank>Pre-acquisition</blank>（收购前） 利润 → 属于收购日净资产，用于计算 <blank>Goodwill</blank>（商誉）；<br><blank>Post-acquisition</blank>（收购后） 利润 → 属于 <blank>Group RE</blank>（集团留存收益）和 <blank>NCI</blank>（非控制性权益）。",
+                        explanation: {
+                            title: "两个最容易丢分的'特殊处理'",
+                            content: "FV调整：如果子公司的地皮账上记100万但实际值150万，净资产调高50万→商誉就少了，同时合并报表上这块地要按150万列示。年中收购：如果4月1日才收购，1-3月的利润是人家'嫁过来之前赚的'(pre-acq)，不能算进集团利润，要加进净资产去算商誉。",
+                            analogy: "FV调整像二手房：你以为花200万买了值150万的房（商誉50万），结果评估发现地段升值了30万值180万，那你'多花的钱'就少了（商誉只有20万了）。年中收购像半途入伙：7月1日才入伙的奶茶店，1-6月赚的钱不归你分。"
+                        }
+                    },
+                    // ===== 22-5. CSOCI 合并规则汇总（对应PPT §5 上半部分） =====
+                    {
+                        id: "22-5",
+                        category: "合并报表编制",
+                        question: "【CSOCI 合并综合收益表汇总】<br><table style='width:100%;border-collapse:collapse;margin-top:8px;font-size:0.95em;'><tr><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:18%;'>项目</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:28%;'>No intra-group<br>无内部交易</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:27%;'>Downstream P→S<br>顺流</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:27%;'>Upstream S→P<br>逆流</th></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Revenue</b><br>（收入）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P + S</blank><br>（母 + 子）</td><td colspan='2' style='border:1px solid #dee2e6;padding:10px;'><blank>P + S − intra-group sales</blank><br>（母 + 子 − 内部销售收入）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>COS</b><br>（销售成本）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P + S</blank><br>（母 + 子）</td><td colspan='2' style='border:1px solid #dee2e6;padding:10px;'><blank>P + S − intra-group sales + URP</blank><br>（⚠️ COS要加回URP不是减！）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Div Inc</b><br>（股利收入）</td><td colspan='3' style='border:1px solid #dee2e6;padding:10px;text-align:center;'><blank>Eliminate</blank><br>（抵销来自S的股利收入）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Group Profit</b><br>（集团总利润）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P profit + S profit</blank><br>（母利润 + 子利润）</td><td colspan='2' style='border:1px solid #dee2e6;padding:10px;'><blank>P profit + S profit − URP</blank><br>（母利润 + 子利润 − 未实现利润）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>NCI profit</b><br>（NCI利润）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>S profit × NCI%</blank><br>（子公司利润 × NCI持股比例）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>S profit × NCI%</blank><br>（⚠️ 顺流时NCI不扣URP！）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>(S profit − URP) × NCI%</blank><br>（⚠️ 逆流时NCI要扣URP！）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Parent profit</b><br>（归母净利润）</td><td colspan='3' style='border:1px solid #dee2e6;padding:10px;text-align:center;'><blank>Group Profit − NCI profit</blank><br>（集团总利润 − NCI利润）</td></tr></table>",
+                        explanation: {
+                            title: "合并利润表——像做一锅大杂烩",
+                            content: "先把P和S所有收入、成本加到一起（line by line），然后：内部互卖的收入和成本对冲掉、P收S的分红删掉、存货里虚增的利润(URP)扣掉。NCI利润那行要注意：顺流时URP是P惹的祸跟NCI无关，逆流时URP是S惹的祸NCI也要按比例扣。归母利润 = 用总利润减掉NCI那份就行。",
+                            analogy: "老爸和儿子各开一间店年底合并算账。所有收入加起来，但老爸偷偷卖货给儿子的那笔'内部流水'不算、儿子给老爸上缴的10万也不算、仓库里还没卖掉的内部货品利润也不算。最后看谁惹的祸（URP）谁就多扣点。"
+                        }
+                    },
+                    // ===== 22-6. CSOFP 合并规则汇总（对应PPT §5 下半部分） =====
+                    {
+                        id: "22-6",
+                        category: "合并报表编制",
+                        question: "【CSOFP 合并财务状况表汇总】<br><table style='width:100%;border-collapse:collapse;margin-top:8px;font-size:0.95em;'><tr><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:18%;'>项目</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:28%;'>No intra-group<br>无内部交易</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:27%;'>Downstream P→S<br>顺流</th><th style='border:1px solid #dee2e6;padding:10px;background:#0077b6;color:white;width:27%;'>Upstream S→P<br>逆流</th></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Goodwill</b><br>（商誉）</td><td colspan='3' style='border:1px solid #dee2e6;padding:10px;'><blank>(Cost + NCI @ DOA) − S Net Assets @ DOA</blank><br>（(投资成本 + 收购日NCI公允价值) − 收购日子公司净资产）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Inventory</b><br>（存货）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P + S</blank><br>（母 + 子）</td><td colspan='2' style='border:1px solid #dee2e6;padding:10px;'><blank>P + S − URP</blank><br>（母 + 子 − 未实现利润）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Rec/Pay</b><br>（应收/应付）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P + S</blank><br>（母 + 子）</td><td colspan='2' style='border:1px solid #dee2e6;padding:10px;'><blank>P + S − intra-group balance</blank><br>（母 + 子 − 内部应收应付对冲）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Share Cap</b><br>（股本）</td><td colspan='3' style='border:1px solid #dee2e6;padding:10px;text-align:center;'><blank>P only</blank><br>（仅母公司，⚠️ 绝不可加上S的股本！）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>Group RE</b><br>（集团留存收益）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P RE + S post-acq RE × P%</blank><br>（母公司RE + 子公司收购后RE × 母公司持股比例）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P RE − URP + S post-acq RE × P%</blank><br>（⚠️ 顺流：URP从P的RE里扣）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>P RE + (S post-acq RE − URP) × P%</blank><br>（⚠️ 逆流：URP从S的收购后RE里扣）</td></tr><tr><td style='border:1px solid #dee2e6;padding:10px;'><b>NCI</b><br>（非控制性权益）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>NCI @ DOA FV + S post-acq RE × NCI%</blank><br>（收购日NCI公允 + 子公司收购后RE × NCI持股比例）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>NCI @ DOA FV + S post-acq RE × NCI%</blank><br>（⚠️ 顺流时NCI不扣URP！）</td><td style='border:1px solid #dee2e6;padding:10px;'><blank>NCI @ DOA FV + (S post-acq RE − URP) × NCI%</blank><br>（⚠️ 逆流时NCI要扣URP！）</td></tr></table>",
+                        explanation: {
+                            title: "合并SOFP——权益部分最容易出错",
+                            content: "资产负债那边就是P+S逐行加起来（有FV调整要调、有URP要减存货、有内部应收应付要对冲）。权益部分最关键：股本只写P的(S的被P'买'了)；Group RE里URP谁惹的就从谁的RE里扣(顺流扣P的，逆流扣S的再按比例分)；NCI也一样，逆流时因为URP是S产生的，NCI也要承担一份。",
+                            analogy: "做集团SOFP就像年底家庭财务盘点：房(P的资产)+车(S的资产)都要列上，但互相借的钱要对冲掉。户主(P)出的注册资本单独列，赚的钱按'谁出力多少'来分配，亏的假利润按'谁惹的祸'来扣。"
+                        }
+                    },
+                    // ===== 22-7. URP + 顺流vs逆流 =====
+                    {
+                        id: "22-7",
+                        category: "内部交易",
+                        question: "Unrealised Profit（未实现利润 URP）：当集团内一家公司向另一家加价销售商品，且商品在年末仍 <blank>still in inventory</blank>（留在买方存货中），那部分利润是 <blank>unrealised</blank>（未实现的）。<br>URP = <blank>Total intra-group profit</blank>（内部交易总利润）× <blank>% still in inventory</blank>（期末仍在买方存货中的比例）。<br><br>核心原则——<blank>The entity that makes the profit bears the URP</blank>（谁赚了这笔利润，谁就承担URP）：<br>⬇️ Downstream（顺流 P→S）：URP由 <blank>Parent</blank>（母公司） 产生 → Group RE扣除 <blank>100%</blank>（全部） URP；NCI <blank>not affected</blank>（不受影响）。<br>⬆️ Upstream（逆流 S→P）：URP由 <blank>Subsidiary</blank>（子公司） 产生 → Group RE扣除 <blank>P%</blank>（母公司持股比例） 的URP；NCI承担 <blank>NCI%</blank>（NCI持股比例） 的URP。",
+                        explanation: {
+                            title: "未实现利润 + 顺流vs逆流：谁惹的祸谁买单",
+                            content: "集团内A以120卖给B成本100的货（利润20），年底B还没卖掉，集团角度这20块利润是假的。URP要扣掉，但关键是从谁身上扣：顺流(P卖给S)是P惹的祸，全扣P的RE，跟NCI无关；逆流(S卖给P)是S惹的祸，S的所有股东(含NCI)按比例分担。",
+                            analogy: "你把自制手工品'卖'给妈妈赚了50块，但手工品还在家里——在'家庭账本'上这50块是假利润。如果是老爸卖给儿子的（顺流），全算老爸的错跟小股东无关；如果是儿子卖给老爸的（逆流），儿子公司犯的错，所有股东（含小股东NCI）都要按比例分担。"
+                        }
+                    },
+                    // ===== 22-8. 内部利润计算 (Margin vs Markup) =====
+                    {
+                        id: "22-8",
+                        category: "内部交易",
+                        question: "计算内部交易总利润（Total intra-group profit）的情形：<br>① 给定内部收入和成本：<br><blank>Profit</blank>（内部利润） = <blank>Revenue</blank>（内部收入） − <blank>Cost</blank>（内部成本）；<br>② 仅给内部收入（Revenue）：<br>▶ 题目给 Markup（加成率）：<blank>Profit</blank>（内部利润） = <blank>Revenue</blank>（售价） ÷ <blank>(1 + Markup)</blank>（1加上加成率，⚠️ 绝不可直接拿售价去乘！） × <blank>Markup</blank>（加成率）；<br>▶ 题目给 Margin（毛利率）：<blank>Profit</blank>（内部利润） = <blank>Revenue</blank>（售价，绝不可用成本代替） × <blank>Margin</blank>（毛利率）；<br>③ 仅给内部成本（Cost）：<br>▶ 题目给 Markup（加成率）：<blank>Profit</blank>（内部利润） = <blank>Cost</blank>（成本，绝不可用售价代替） × <blank>Markup</blank>（加成率）；<br>▶ 题目给 Margin（毛利率）：<blank>Profit</blank>（内部利润） = <blank>Cost</blank>（成本） ÷ <blank>(1 − Margin)</blank>（1减去毛利率，⚠️ 绝不可直接拿成本去乘！） × <blank>Margin</blank>（毛利率）。",
+                        explanation: {
+                            title: "内部利润计算：找准'顺撇'还是'逆撇'",
+                            content: "计算URP必须先算出这笔买卖的总利润。最爱出的考试陷阱就是混用公式：Margin是以售价(Revenue)为底计算，所以看到售价和Margin直接乘（顺撇），看到成本就要先除以(1-Margin)换算出售价再乘（逆撇）。Markup是以成本(Cost)为底计算，看到成本和Markup直接乘（顺撇），看到售价就要先除以(1+Markup)换算出成本再乘（逆撇）。",
+                            analogy: "就像去商场买鞋：如果是商场打折(Margin)，导购说'标价的20%是商家定好的利润'，你只认标签上的标价去算；如果是托黄牛买鞋(Markup)，黄牛说'我的提成是进货价上加价20%'，你得去扒出他的进货价去算。绝不能拿打折的公式生搬硬套黄牛代购费！"
+                        }
+                    }
+                ]
+            },
+            // ==================== 第二十三章：财务报表分析 ====================
+            23: {
+                name: "第二十三章 财务报表分析",
+                categories: ["基础概念", "盈利能力", "长期偿债能力", "短期偿债能力", "营运效率", "综合题型", "分析局限性"],
+                cards: [
+                    // ===== 23-1. Introduction & Categories =====
+                    {
+                        id: "23-1",
+                        category: "基础概念",
+                        question: "① 分析财务报表的目的在于通过与 <blank>historical performance</blank>（历史业绩）和 <blank>other companies</blank>（其他公司）进行 <blank>comparing</blank>（比较），来了解报表信息的 <blank>significance</blank>（重要性）。<br>② 会计比率的四大分析维度：<br>▶ <blank>Profitability</blank>（盈利能力）：衡量创造利润的效率。<br>▶ <blank>Long-term Solvency</blank>（长期偿债能力）：衡量长期财务稳定性和债务比例。<br>▶ <blank>Short-term Liquidity</blank>（短期偿债能力）：偿还短期债务的能力。<br>▶ <blank>Efficiency</blank>（营运效率）：管理营运资本的效率。",
+                        explanation: {
+                            title: "没有对比就没有伤害，单一数字无意义",
+                            content: "财务报表分析的核心就是找参照物。你今年赚了1个亿，看上去很牛，但如果去年赚了2个亿（历史比较），或者对手全赚了5个亿（同业比较），你的财报就显得糟糕。四大维度就像给公司做全身检查的四个重点科室。",
+                            analogy: "这就像去医院拿体检报告：盈利能力看你'造血能力强不强'，长期偿债能力看你的'骨架支撑行不行'，短期偿债能力看你'口袋里有没有现金应急'，营运效率看你'肠胃新陈代谢堵不堵'。"
+                        }
+                    },
+                    // ===== 23-2. 盈利能力 - GP & OP Margin =====
+                    {
+                        id: "23-2",
+                        category: "盈利能力",
+                        question: "计算毛利率与营业利润率：<br>① <blank>GP Margin</blank>（销售毛利率）= <blank>Gross Profit</blank>（毛利） ÷ <blank>Sales</blank>（销售收入） × 100%。<br>衡量扣除销售成本后剩余的收入利润水平。<br>⚠️陷阱：若部分期末存货以低于成本的价格计入，发生减值，会增加销售成本，导致销售毛利率下降。<br>② <blank>Operating Profit Margin</blank>（营业利润率）= <blank>PBIT</blank>（息税前利润） ÷ <blank>Sales</blank>（销售收入） × 100%。<br>显示每单位销售收入中包含的税前息前利润。",
+                        explanation: {
+                            title: "毛利与营业利润：扣完进货价和扣完所有费用的区别",
+                            content: "毛利率只考虑直接成本（进货价、生产成本），而营业利润率进一步扣除了行政、分销等营运开支（但不扣利息和税）。考试常考被“减值”刺客偷袭：期末存货贬值了，就等于你这笔买卖里的损耗拉大了（销货成本被迫增加），所以算出来的毛利被吃掉，毛利率当场降低。",
+                            analogy: "你在闲鱼卖二手鞋。毛利就好比'单双鞋的进销差价'。如果不小心有一批鞋过气，砸在手里只能按骨折价清仓甩卖（期末存货低于成本价），你总体核算这批生意的'赚头'（总毛利率）立马就被拉挎拖垮了。"
+                        }
+                    },
+                    // ===== 23-3. 资产周转率 =====
+                    {
+                        id: "23-3",
+                        category: "盈利能力",
+                        question: "<blank>Asset Turnover</blank>（资产周转率）= <blank>Sales</blank>（销售收入，⚠️分子不是利润！） ÷ <blank>Capital Employed</blank>（已动用资本） × 100%，或表达为倍数。<br>作用：衡量企业利用资产创造销售收入的效率。",
+                        explanation: {
+                            title: "资产周转率：一块钱的机器能转出几块钱的流水",
+                            content: "这个比率考察的不是你赚钱有多暴利（那是利润率），而是你生意的资金跑得有多快。你的公司砸了100万的本钱进去，一年能搓出多少万的总流水（Sales）？倍数越高，说明死板资金运转起来转化为现钱的效率极高。",
+                            analogy: "花10万置办设备开面馆（已动用资本）。A店一年卖了5万块面条（转得慢，周转率0.5次）；B店翻台率极高，一年卖出50万流水（转得快，周转率5次）。不看每碗面赚几毛钱，只看你这口锅一天能跑出几碗面！"
+                        }
+                    },
+                    // ===== 23-4. ROCE =====
+                    {
+                        id: "23-4",
+                        category: "盈利能力",
+                        question: "<blank>ROCE</blank>（已动用资本回报率）是最重要的盈利能力指标，衡量公司利用其可用资源创造利润的整体效率。<br>公式：ROCE = <blank>PBIT</blank>（息税前利润） ÷ <blank>Capital Employed</blank>（已动用资本） × 100% = <blank>Operating Profit Margin</blank>（营业利润率） × <blank>Asset Turnover</blank>（资产周转率）。",
+                        explanation: {
+                            title: "ROCE：赚钱机器的核心马力",
+                            content: "ROCE衡量的是“准备长期留在公司里生钱的资本”，到底能赚回多少最核心的营业利润（PBIT）。因为长期负债的利息是要发给债权人的“回报”，所以在衡量整体创造利润效率时，必须用“扣除利息前”的PBIT，绝不能用支付完利息的净利润！因为算这笔账时资方是一体的。",
+                            analogy: "你开火锅店，自己出100万（Equity），找小贷公司借长期借款50万（长期负债），欠买菜供货商20万（暂扣流动负债）。你开店“正经生钱的本钱（Capital Employed）”只有150万，考核你的经营业绩，看的必须是你在“还利息和交税之前”净赚了多少钱，这才对得起你砸下去的150万大盘。"
+                        }
+                    },
+                    // ===== 23-5. ROE =====
+                    {
+                        id: "23-5",
+                        category: "盈利能力",
+                        question: "<blank>Return on Equity</blank>（股本回报率，ROE）= <blank>Profit after tax and preference dividend</blank>（扣除税和优先股股息后的净利润，即PAT） ÷ <blank>Equity shareholders funds</blank>（普通股股东权益，⚠️绝不能包含负债） × 100%。<br>作用：反映股东投资的回报水平。",
+                        explanation: {
+                            title: "ROE：最终属于大老板自己口袋的肥肉",
+                            content: "如果说ROCE看的是这家公司作为一个整体有多能打，ROE看的就是“作为普通股股东（最终老板），这笔买卖到底拿回多少？” 因为净利润已经把该交的税、该付的利息、该给优先股神仙大哥的固定股息全剔除了，这种干干净净剩下的利润，拿去除以老板自己砸进来的股本底盘，才是最真实的资本膨胀率。",
+                            analogy: "火锅店一年毛利30万，还了小额利息5万，交了税5万，给暗股大爷分了点死钱（优先股息），剩下的那一点纯钱（PAT）才能名正言顺进你兜里。把你分到的干货钱除以你当年纯自己砸进去的首发资金，就是ROE！别人多能打不重要，最后落到老板手里有几成才重要！"
+                        }
+                    },
+                    // ===== 23-6. 长期偿债 - Debt/Gearing/Leverage =====
+                    {
+                        id: "23-6",
+                        category: "长期偿债能力",
+                        question: "反映公司长期偿债能力的三大指标：<br>① <blank>Debt Ratio</blank>（资产负债率）= <blank>Total Liabilities</blank>（总负债） ÷ <blank>Total Assets</blank>（总资产）。<br>反映通过债务融资的资产比例。一般认为 50% 是警戒线。<br>② <blank>Gearing</blank>（财务杠杆 / 资本负债率）= <blank>Total long-term liabilities</blank>（长期负债） ÷ (<blank>Shareholders' equity</blank>（股东权益） + <blank>Total long-term liabilities</blank>（长期负债）) × 100%。<br>杠杆比率超过 50% 被视为高杠杆，若继续提高杠杆，未来可能面临借款困难。<br>③ <blank>Leverage</blank>（杠杆率）= <blank>Shareholders' equity</blank>（股东权益） ÷ (<blank>Shareholders' equity</blank>（股东权益） + <blank>Total long-term liabilities</blank>（长期负债）) × 100%。<br>从权益角度看资本结构，它是杠杆比率的反向指标，必背考点：<blank>Gearing</blank> + <blank>Leverage</blank> = 100%。",
+                        explanation: {
+                            title: "资本杠杆率：看看你的房子是不是全靠贷款撑出来的",
+                            content: "Gearing 特别的点在于它只比较“长期资金”的骨架（不算流动负债），看早期建大楼的钱，里面有多少是借来的。一旦超过50%（代表外债盘子大过自己真金白银），就属于极端危险玩家。而 Leverage 和 Gearing 正好是个对拼组合：你进我退，你借得多我就掏得少，加起来刚好吃干抹净 100%。",
+                            analogy: "全房款1000万买大平层（长期资本）。你找银行贷了700万（Gearing = 70%），自己凑的首付款只有300万（Leverage = 30%）。只要Gearing破了50%的头，你就是彻头彻尾的杠杆暴徒！等你想二套房再找银行借钱时，直接被判定风险太高惨遭拒贷（借款困难）。"
+                        }
+                    },
+                    // ===== 23-7. 利息保障倍数 =====
+                    {
+                        id: "23-7",
+                        category: "长期偿债能力",
+                        question: "<blank>Interest Cover</blank>（利息保障倍数）= <blank>PBIT</blank>（息税前利润，⚠️绝不可用税后净利润！） ÷ <blank>Interest Charges</blank>（支付的利息费用）。<br>作用：显示公司利润对利息费用的覆盖程度。低于 2 倍风险较高，通常应大于 3 倍。",
+                        explanation: {
+                            title: "利息覆盖率：打工人的血汗够不够还月供",
+                            content: "银行放贷唯一关切的核心：既然你拿利润还我利息，我自然要算你能凑出多少个利息来充盈。注意这里因为交完利息才交税，所以必须拿肥硕的未被克扣过的 PBIT 来除利息！如果覆盖率跌破两倍，意味着公司年景不好打个喷嚏，利润腰斩利息就当场还不上了。",
+                            analogy: "你每月房贷月供要还1万元（Interest）。这钱是从你还没给国家交税的基本工资收入（PBIT）大池子里剥出来的。如果你工资5万（Cover=5倍），你喝着咖啡游刃有余（轻松覆盖）。如果你勉强才挣1.5万（Cover=1.5倍），公司只要稍微降个薪，你立马断供暴雷连房带包都被收走！"
+                        }
+                    },
+                    // ===== 23-8. 流动比率与营运资本 =====
+                    {
+                        id: "23-8",
+                        category: "短期偿债能力",
+                        question: "流动性是指公司能够迅速调用以偿还债务的现金量。流动性资产是指即将或可能很快转换为现金的流动资产项目以及现金本身。<br><br><blank>Working Capital</blank>（营运资本）= <blank>Current Assets</blank>（流动资产） − <blank>Current Liabilities</blank>（流动负债）。<br>表示公司日常运营真正可以自由调配的结余水池大小。<br><br><blank>Current Ratio</blank>（流动比率）= <blank>Current Assets</blank>（流动资产） ÷ <blank>Current Liabilities</blank>（流动负债）。<br>作用：衡量短期偿债能力。可接受水平通常为 1.5 : 1，但仅作参考。",
+                        explanation: {
+                            title: "流动比率与营运资本：远水救不了近火的短债之围",
+                            content: "衡量公司会不会马上破产的命门不是长期大额房贷，而是下个星期要给别人立马兑付的血债（流动负债）。你必须靠能够几个月内快速折旧为钞票的东西（流动资产）去稳局。这两项不仅相减算出你手里的活钱余粮（Working Capital），相除更揭示了你的安全护盾厚度（Current Ratio）。拿捏它们等于拿捏住了公司的生命线。",
+                            analogy: "考核你下个月会不会饿死，不是算你老家千亩荒岭的估值（非流动资产），而只能算你眼下微信零钱和借给室友的快钱（流动资产），减去你本月必还的花呗（流动负债），看看兜里还能剩几分“营运生活费（Working Capital）”，剩下的能不能顶花呗的1.5倍！"
+                        }
+                    },
+                    // ===== 23-9. 速动比率 =====
+                    {
+                        id: "23-9",
+                        category: "短期偿债能力",
+                        question: "<blank>Quick Ratio / Acid Test</blank>（速动比率 / 酸性测试）= (<blank>Current Assets</blank>（流动资产） − <blank>Inventory</blank>（存货，⚠️第一步就必须剥离它！因其难以马上变现）) ÷ <blank>Current Liabilities</blank>（流动负债）。<br>作用：更严格的流动性测试，排除了变现能力较差的存货。可接受水平通常为 0.8 : 1。",
+                        explanation: {
+                            title: "速动比率 (Acid Test)：谁在装大佬裸泳一测便知",
+                            content: "流动比率虽然好看，但是存货这个“拖油瓶”虚胖了它的分数。把一仓库没卖出去的鞋指望明天折现去还高利贷那简直是做梦！所以在酸性测试法里，必须当场开辟掉这堆库存废铜烂铁，唯独考核兜里最真金白银的变现力资产。",
+                            analogy: "明天黑帮要上门来催收你2万块血债（流动负债）。你翻开账本说账上虽然零钱就1万，但是闲鱼里边压了自己要摆地推的破旧衣服估价足够凑齐啊！黑帮大哥一个眼神：“卖衣服那猴年马月的事来不及了！”直接砍掉你算盘里的折价库存，算出你依然差短空缺！这即是终极残酷抗暴击的速动水平！"
+                        }
+                    },
+                    // ===== 23-10. 周转天数: 应收与应付 =====
+                    {
+                        id: "23-10",
+                        category: "营运效率",
+                        question: "衡量营运资本管理的周转天数，不要找错分母！：<br>① <blank>Receivables Days</blank>（应收账款周转天数）= <blank>Trade Receivables</blank>（应收账款） ÷ <blank>Credit Sales</blank>（赊销收入，⚠️万万不可用全部销量/现款滥竽充数！） × 365天。<br>这只是一个近似估计。显著超过 30 天可能意味着资金管理不善，但也可能是公司给予宽松信用条件以争取客户。<br>② <blank>Payables Days</blank>（应付账款周转天数）= <blank>Trade Payables</blank>（应付账款） ÷ <blank>Credit Purchases</blank>（只能挂赊购成分！） × 365天。<br>付款期通常有助于评估公司的流动性。天数延长可能是短期资金紧张或流动资产管理不善的信号。",
+                        explanation: {
+                            title: "天数反着算，必须看准源头流量",
+                            content: "考官出题挖的终极坑就是用大池子代替源头小水管：“应收账款”产生的前提是因为你纵容了“赊销（放他欠账拿走货）”，如果你把付清了的现销售合并进去分母便会被离谱撑大失真。客户拖你越久看似拉客其实是你在被流氓压榨；你恶意拖延供应商越久表面护甲高现金厚，但往往暴露你早已揭不开锅濒临崩溃。",
+                            analogy: "算别人欠你的人情（应收）还能拖欠多久，分母核心永远是你“慷慨同意他延期的赊账买卖”，绝不能把人家全款全额利落当面结清的买卖混入这个深渊里面做背书。"
+                        }
+                    },
+                    // ===== 23-11. 周转天数: 存货 =====
+                    {
+                        id: "23-11",
+                        category: "营运效率",
+                        question: "<blank>Inventory Days</blank>（存货周转天数）= <blank>Inventory</blank>（存货） ÷ <blank>Cost of Sales</blank>（销货成本，⚠️切不可犯傻取Sales标价额！） × 365天。<br>一般来说，存货周转越快越好。<br><br>⚠️ 分析必考局：存货周转期延长说明：<br>① <blank>slowdown in trading</blank>（销售放缓）；<br>② <blank>build-up in inventory</blank>（存货积压），表明存货投资可能过多。",
+                        explanation: {
+                            title: "进仓库与出仓库的分母逻辑不能被提价干扰",
+                            content: "存货的属性本就是“进货入库的原出厂价”，它的血脉匹配点理所当然就是“卖出去这批货抛耗的底牌成本（COS）”。如果用商家自己凭空加价包装上去贴花后的“利润泡沫版标价（Sales）”做分母来算天数，便活生生变味成了胡作非为了。库存天数一旦离奇增长，非死即伤。不是消费者完全不买单市场扑街了，就是采购员有大病疯狂堆叠垃圾。",
+                            analogy: "盘算家里一桶大白米放着能吃几天，得分母是“每天固定被你咀嚼咽下肚的米量（直接消耗成分金额）”，万万不能拿“你白天出门打工出卖劳力赚了几两银子（收入）”这不沾边的逻辑。一旦本该吃半个月的米如今要搁置俩月才能清底消完，无疑就是最近大家天天点外卖不生火（销售放缓），或者是老妈大减价买得成山成海（积压）。"
+                        }
+                    },
+                    // ===== 23-12. 比率分析的局限性 =====
+                    {
+                        id: "23-12",
+                        category: "基础概念",
+                        question: "<blank>Limitations of Ratio Analysis</blank>（比率分析的局限性）主要包括：<br>① <blank>Out of Date</blank>（信息过时）：财务报表反映的是过去的信息，基础数据通常已经滞后。<br>② <blank>Price Changes</blank>（价格变动影响）：通货膨胀等价格变动会扭曲历史比较，除非进行调整。<br>③ <blank>Different Accounting Policies</blank>（会计政策差异）：不同公司可能采用不同的会计政策，导致比率不具可比性。",
+                        explanation: {
+                            title: "比率分析的“测不准”原理",
+                            content: "比率分析不是万能的。首先它看的是后视镜，等报表发出来时，公司的实际情况可能早就变了（信息过时）。其次，如果期间发生了严重的通货膨胀，拿今年的100万利润和去年的100万比就没有意义（价格变动）。最后，由于准则允许不同企业自由选择折旧方法或存货计价法，这就像让带着计算器和光手算的人一起考试，出来分数没法直接比（会计政策差异）。",
+                            analogy: "这就像通过相亲者的“前年体检报告”来找对象：报告是过时的（Out of Date）；而且现在对方天天胡吃海喝变胖了，外在环境变了（Price Changes）；还有可能当初体检用的机器标准跟现在都不一样（Different Accounting Policies）。所以光看指标数据，容易被表面现象忽悠。"
                         }
                     }
                 ]
